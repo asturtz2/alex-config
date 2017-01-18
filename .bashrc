@@ -113,7 +113,15 @@ if ! shopt -oq posix; then
 fi
 
 # MODS
+
+#wal config
 wal -r -t
 source "$HOME/.cache/wal/colors.sh"
 alias config='/usr/bin/git --git-dir=/home/alex/.cfg/ --work-tree=/home/alex'
 alias config='/usr/bin/git --git-dir=/home/alex/configs --work-tree=/home/alex'
+
+#Nvim config
+alias vim=nvim
+
+#Fzf config
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash

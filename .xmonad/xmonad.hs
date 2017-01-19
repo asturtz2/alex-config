@@ -8,23 +8,22 @@ import XMonad.Hooks.ManageDocks
 import XMonad.Layout.Spacing
 import XMonad.Layout.EqualSpacing
 
-import XMonad.Util.Run(spawnPipe)
-import XMonad.Util.Run(runInTerm)
+import XMonad.Util.Run(spawnPipe, runInTerm)
 import XMonad.Util.EZConfig(additionalKeys)
 
 import XMonad.Actions.WindowGo
 
 main = do
-    xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmobarrc" 
+    xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmobarrc"
     xmonad $ defaultConfig
         { manageHook         = manageHook'
-	, layoutHook         = layoutHook'
-	, logHook            = logHook' xmproc
-	, borderWidth        = borderWidth'
-	, terminal           = terminal'
-	, normalBorderColor  = normalBorderColor'
-	, focusedBorderColor = focusedBorderColor'
-	} `additionalKeys`
+        , layoutHook         = layoutHook'
+        , logHook            = logHook' xmproc
+        , borderWidth        = borderWidth'
+        , terminal           = terminal'
+        , normalBorderColor  = normalBorderColor'
+        , focusedBorderColor = focusedBorderColor'
+        } `additionalKeys`
         [ newFirefox
         , selectFirefox
         ]

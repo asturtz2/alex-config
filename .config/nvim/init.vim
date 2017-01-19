@@ -3,10 +3,11 @@
 " }}}
 " Core Mappings {{{
 let mapleader = ","
-map <Leader><CR> :nohlsearch<CR>
-noremap <Space> za
-map <Leader>ev :e ~/.config/nvim/init.vim<CR>
-map <Leader>pi :PlugInstall<CR>
+map <Leader><CR> :nohlsearch<CR> "Clear search results
+noremap <Space> za "Open/close fold
+map <Leader>ev :e ~/.config/nvim/init.vim<CR> "Edit vim config
+map <Leader>rv :so ~/.config/nvim/init.vim<CR> "Reload vim config
+map <Leader>pi :PlugInstall<CR> "Install plugins
 " }}}
 
 " Folding {{{
@@ -17,6 +18,7 @@ set foldmethod=indent "Fold based on an indent level
 " }}}
 
 " Misc Options {{{
+filetype plugin indent on
 set modelines=1
 set hidden "Enable hidden buffers
 set number "Enable line numbers
@@ -35,6 +37,10 @@ map <Leader><Space> :CtrlP<CR>
 let g:ctrlp_show_hidden = 1 "Show hidden files in control p
 let g:ctrlp_user_command = 'ag %s -l -g "" --nocolor --hidden'
 let g:ctrlp_use_caching = 0
+" }}}
+
+" Syntastic {{{
+let g:syntastic_aggregate_errors = 1
 " }}}
 
 " Fugitive {{{
@@ -57,15 +63,28 @@ map <Leader>u :
 " Plugins {{{
 call plug#begin('~/.local/share/nvim/plugged')
 
+" Core {{{
 Plug 'ctrlpvim/ctrlp.vim' 
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
+Plug 'tpope/vim-dispatch'
 Plug 'sjl/gundo.vim'
 Plug 'dylanaraps/wal'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'vim-syntastic/syntastic'
+Plug 'ervandew/supertab'
+" }}}
+
+" Haskell {{{
+Plug 'itchyny/vim-haskell-indent'
+" }}}
+
+" C# {{{
+Plug 'OmniSharp/omnisharp-vim'
+" }}}
 
 call plug#end()
 " }}}

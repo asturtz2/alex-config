@@ -114,9 +114,11 @@ fi
 
 # MODS
 
-#wal config
+# wal config
 wal -r -t
 source "$HOME/.cache/wal/colors.sh"
+
+# Aliases for config git repo
 alias config='/usr/bin/git --git-dir=/home/alex/.cfg/ --work-tree=/home/alex'
 alias config='/usr/bin/git --git-dir=/home/alex/configs --work-tree=/home/alex'
 

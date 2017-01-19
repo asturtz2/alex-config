@@ -1,1 +1,2 @@
-feh  --bg-scale '/home/alex/Pictures/cabin.jpg' 
+#!/bin/sh
+feh  --bg-fill '/home/alex/Pictures/waterfall-rockface.jpg' 

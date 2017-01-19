@@ -1,5 +1,4 @@
 [Configuration]
-BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
 MiscAlwaysShowTabs=FALSE
 MiscBell=FALSE
 MiscBordersDefault=FALSE
@@ -22,4 +21,14 @@ ColorForeground=#dcdcdc
 ColorBackground=#2c2c2c
 ColorCursor=#dcdcdc
 ScrollingBar=TERMINAL_SCROLLBAR_NONE
+FontName=Fantasque Sans Mono 12
+MiscBellUrgent=FALSE
+MiscMouseWheelZoom=TRUE
+MiscMiddleClickOpensUri=FALSE
+MiscCopyOnSelect=FALSE
+MiscDefaultWorkingDir=
+MiscRewrapOnResize=TRUE
+MiscUseShiftArrowsToScroll=FALSE
+MiscSlimTabs=FALSE
+TitleInitial=Term
 

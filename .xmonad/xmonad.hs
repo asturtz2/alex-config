@@ -31,7 +31,7 @@ main = do
 
 -- Basic configs
 borderWidth' = 1
-terminal' = "xfce4-terminal"
+terminal' = "urxvt"
 normalBorderColor' = "#cccccc"
 focusedBorderColor' = "#8A745E"
 

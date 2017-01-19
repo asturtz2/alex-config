@@ -2,9 +2,9 @@
 " Startup {{{
 " }}}
 " Core Mappings {{{
-let mapleader = ","
+let mapleader = "\<Space>"
 map <Leader><CR> :nohlsearch<CR> "Clear search results
-noremap <Space> za "Open/close fold
+noremap , za "Open/close fold
 map <Leader>ev :e ~/.config/nvim/init.vim<CR> "Edit vim config
 map <Leader>rv :so ~/.config/nvim/init.vim<CR> "Reload vim config
 map <Leader>pi :PlugInstall<CR> "Install plugins
@@ -25,6 +25,7 @@ set number "Enable line numbers
 set showmatch "Show matching characters (parentheses, brackets, etc.)
 set incsearch "Search as characters are entered
 set hlsearch "Highlight search matches
+let g:python_host_prog = '/usr/bin/python'
 " }}}
 
 " NERDTree {{{

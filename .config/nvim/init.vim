@@ -10,9 +10,8 @@ map <silent> <Leader>c :nohlsearch<CR>
 "Open/close fold
 noremap , za
 
-"Edit vim config
-map <Leader>ev :e ~/.config/nvim/init.vim<CR>
-
+" Use backtick for command line access
+map ` :
 "Reload vim config
 map <Leader>rv :so ~/.config/nvim/init.vim<CR>
 
@@ -52,6 +51,14 @@ let g:ctrlp_use_caching = 0
 
 " Syntastic {{{
 let g:syntastic_aggregate_errors = 1
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
 " }}}
 
 " Fugitive {{{
@@ -81,6 +88,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-dispatch'
+Plug 'tpope/vim-unimpaired'
 Plug 'sjl/gundo.vim'
 Plug 'dylanaraps/wal'
 Plug 'vim-airline/vim-airline'

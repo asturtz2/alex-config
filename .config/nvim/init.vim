@@ -2,12 +2,22 @@
 " Startup {{{
 " }}}
 " Core Mappings {{{
-let mapleader = "\<Space>"
-map <Leader><CR> :nohlsearch<CR> "Clear search results
-noremap , za "Open/close fold
-map <Leader>ev :e ~/.config/nvim/init.vim<CR> "Edit vim config
-map <Leader>rv :so ~/.config/nvim/init.vim<CR> "Reload vim config
-map <Leader>pi :PlugInstall<CR> "Install plugins
+map <Space> <Leader>
+
+"Clear search results
+map <silent> <Leader>c :nohlsearch<CR>
+
+"Open/close fold
+noremap , za
+
+"Edit vim config
+map <Leader>ev :e ~/.config/nvim/init.vim<CR>
+
+"Reload vim config
+map <Leader>rv :so ~/.config/nvim/init.vim<CR>
+
+"Install plugins
+map <Leader>pi :PlugInstall<CR>
 " }}}
 
 " Folding {{{
@@ -34,7 +44,7 @@ map <Leader>o :NERDTree %<CR>
 " }}}
 
 " CtrlP {{{
-map <Leader><Space> :CtrlP<CR>
+map <Leader><CR> :CtrlP<CR>
 let g:ctrlp_show_hidden = 1 "Show hidden files in control p
 let g:ctrlp_user_command = 'ag %s -l -g "" --nocolor --hidden'
 let g:ctrlp_use_caching = 0
@@ -58,7 +68,7 @@ map <Leader>gb :Gblame
 " }}}
 
 " Gundo {{{
-map <Leader>u :
+map <Leader>u :GundoToggle<CR>
 " }}}
 
 " Plugins {{{
@@ -90,7 +100,7 @@ Plug 'OmniSharp/omnisharp-vim'
 call plug#end()
 " }}}
 
-" Visual {{{
+" UI {{{
 colorscheme wal
 let g:airline_theme='term'
 let g:airline_powerline_fonts=1

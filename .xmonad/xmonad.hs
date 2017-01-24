@@ -36,7 +36,7 @@ focusedBorderColor' = "#8A745E"
 
 -- Hooks
 manageHook' = manageDocks <+> manageHook defaultConfig
-layoutHook' = equalSpacing 15 0 0 1 $ avoidStruts $ layoutHook defaultConfig
+layoutHook' = avoidStruts $ equalSpacing 15 0 0 1 $ layoutHook defaultConfig
 logHook' xmproc = dynamicLogWithPP xmobarPP
     { ppOutput = hPutStrLn xmproc
     , ppTitle  = xmobarColor "brown" "" . shorten 50

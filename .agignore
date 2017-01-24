@@ -1,5 +1,4 @@
 configs*
-.vimperator/*
 *.git*
 .local/share/applications*
 .local/share/gvfs*

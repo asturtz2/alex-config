@@ -127,3 +127,9 @@ alias vim=nvim
 
 #Fzf config
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+#Default editor
+EDITOR='vim'
+
+#Rvt config
+RTV_URLVIEWER=urlview

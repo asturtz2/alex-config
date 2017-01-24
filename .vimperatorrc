@@ -1,3 +1,4 @@
 noremap j 3j
 noremap k 3k
 set editor="gnome-terminal -e vim"
+set gui="none,navigation"

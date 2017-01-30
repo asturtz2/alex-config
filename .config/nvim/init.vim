@@ -49,6 +49,7 @@ set showmatch "Show matching characters (parentheses, brackets, etc.)
 set incsearch "Search as characters are entered
 set hlsearch "Highlight search matches
 set completeopt-="preview"
+let loaded_netrwPlugin=1
 " }}}
 
 " NERDTree {{{
@@ -98,15 +99,15 @@ map <Leader>u :GundoToggle<CR>
 call plug#begin()
 
 " Core {{{
-Plug 'ctrlpvim/ctrlp.vim' 
-Plug 'scrooloose/nerdtree'
-Plug 'tpope/vim-fugitive'
+Plug 'ctrlpvim/ctrlp.vim', { 'on' : ['CtrlP', 'CtrlPBuffer'] }
+Plug 'scrooloose/nerdtree', { 'on' : 'NERDTreeToggle' }
+Plug 'tpope/vim-fugitive', { 'on' : 'GStatus' }
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-repeat'
-Plug 'sjl/gundo.vim'
+Plug 'sjl/gundo.vim', { 'on' : 'GundoToggle' }
 Plug 'dylanaraps/wal'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -116,15 +117,19 @@ Plug 'airblade/vim-gitgutter'
 " }}}
 
 " Haskell {{{
-Plug 'itchyny/vim-haskell-indent'
+Plug 'itchyny/vim-haskell-indent', { 'for' : 'haskell' }
 " }}}
 
 " C# {{{
-Plug 'OmniSharp/omnisharp-vim'
+Plug 'OmniSharp/omnisharp-vim', { 'for' : 'cs' }
 " }}}
 
 " AADL {{{
-Plug 'OpenAADL/AADLib', {'rtp': 'share/vim/'}
+Plug 'OpenAADL/AADLib', { 'rtp': 'share/vim/', 'for' : 'aadl' }
+" }}}
+
+" Prolog {{{
+Plug 'adimit/prolog.vim', { 'for' : 'pl'}
 " }}}
 
 call plug#end()

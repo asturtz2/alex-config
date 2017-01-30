@@ -1,0 +1,335 @@
+2017-01-27 12:15:08	-->	alex4 (~alex@wlan-4-28.unl.edu) has joined #xmonad
+2017-01-27 12:15:08	--	Topic for #xmonad is "xmonad: the tiling window manager with formally proven extensions | xmonad 0.12 released! | http://xmonad.org | http://xmonad.org/faq | cheatsheet: http://bit.ly/gz1R4"
+2017-01-27 12:15:08	--	Topic set by enthropy (~aavogt@d157-103-21.home4.cgocable.net) on Tue, 22 Dec 2015 16:04:55
+2017-01-27 12:15:08	--	Channel #xmonad: 199 nicks (0 ops, 1 voice, 198 normals)
+2017-01-27 12:15:09	--	URL for #xmonad: http://xmonad.org
+2017-01-27 12:15:11	--	Channel created on Tue, 24 Apr 2007 23:33:15
+2017-01-27 12:16:07	<--	amphi (~amphi@243.red-88-8-127.dynamicip.rima-tde.net) has quit (Ping timeout: 245 seconds)
+2017-01-27 12:19:34	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 260 seconds)
+2017-01-27 12:21:42	--	irc: disconnected from server
+2017-01-27 17:39:35	-->	alex4 (~alex@cpe-76-84-115-171.neb.res.rr.com) has joined #xmonad
+2017-01-27 17:39:35	--	Topic for #xmonad is "xmonad: the tiling window manager with formally proven extensions | xmonad 0.12 released! | http://xmonad.org | http://xmonad.org/faq | cheatsheet: http://bit.ly/gz1R4"
+2017-01-27 17:39:35	--	Topic set by enthropy (~aavogt@d157-103-21.home4.cgocable.net) on Tue, 22 Dec 2015 16:04:55
+2017-01-27 17:39:35	--	Channel #xmonad: 193 nicks (0 ops, 1 voice, 192 normals)
+2017-01-27 17:39:35	--	URL for #xmonad: http://xmonad.org
+2017-01-27 17:39:37	--	Channel created on Tue, 24 Apr 2007 23:33:15
+2017-01-27 17:41:28	alex4	Hey guys, does anyone know how to configure a hotkey to run a terminal application that respects my .bashrc? I've tried runInTerm, but it doesn't seem to read .bashrc at all
+2017-01-27 17:42:10	vrs	that seems to me more like a problem of your shell and less of your terminal
+2017-01-27 17:43:11	vrs	it's been a while but I believe that if your terminals run a login shell instead of a normal one, they'll read the .profile instead of the .bashrc
+2017-01-27 17:43:33	vrs	that is, if you're using bash at all
+2017-01-27 17:44:13	vrs	most distros distribute a .profile that executes the .bashrc so you usually don't notice
+2017-01-27 17:44:26	alex4	You might be right, I don't know. Whenever I create a new terminal emulator window using alt+shift+enter (making a new non-login interactive bash shell), it works fine. It's just when it is run directly using xmonad that I have issues
+2017-01-27 17:44:55	alex4	I am running debian for what it's worth
+2017-01-27 17:45:40	vrs	I have no idea what that runs, but try putting echos in the various files to diagnose it (man bash is very helpful here)
+2017-01-27 17:46:07	alex4	I could probably even figure it out if I knew what kind of command is used to launch the shell
+2017-01-27 17:46:13	alex4	Ah the echos are a good idea
+2017-01-27 17:46:15	alex4	Thanks
+2017-01-27 17:46:17	geekosaur	runInTerm runs "sh -c ..." which generally suppresses .bashrc
+2017-01-27 17:46:24	alex4	Ah
+2017-01-27 17:46:57	alex4	Any other XMonad action I could use, or should I just put the relevant info in .profile or something?
+2017-01-27 17:47:15	geekosaur	(rather, the terminal emulator does --- unless it's a gnome-flavored one in which case it doesn't even invoke the shell (see -x option for e.g. gnome-terminal)
+2017-01-27 17:48:06	geekosaur	I think the real question might be "what are you doing exactly that is not using .bashrc"? because runInTerm isn't really intended for things that case
+2017-01-27 17:48:09	geekosaur	*that care
+2017-01-27 17:48:45	geekosaur	if you mean you cannot run an alias that way, that would be normal; terminal emulators don't know shell startup files at all
+2017-01-27 17:49:20	alex4	I have a script that runs whenever I create a new terminal session
+2017-01-27 17:49:32	alex4	Which of course it not being run in the case of runInTerm
+2017-01-27 17:50:27	alex4	Incidentally this script uses environment variables as well, which my guess is that those environment variables are not set
+2017-01-27 17:52:00	geekosaur	so you would need to explicitly involve bash somehow. perhaps: spawn "xterm -e \"sh -c 'source .bashrc; some command here'\""
+2017-01-27 17:52:44	geekosaur	hm, no, not quite right still
+2017-01-27 17:52:56	geekosaur	weird -e handling vs. shell quoting
+2017-01-27 17:53:37	alex4	I think the simplest thing to do would be to just put a duplicate script call in my .profile, yeah? A duplicate call shouldn't be an issue with this script I think
+2017-01-27 17:53:49	alex4	It's kind of a hack though
+2017-01-27 17:53:49	geekosaur	runInTerm "bash -c 'source ~/.bashrc; some command here'" -- maybe
+2017-01-27 17:53:57	alex4	I'll give that a shot
+2017-01-27 17:54:00	geekosaur	.profile likely is not read either
+2017-01-27 17:54:37	geekosaur	the point is, the shell either is not invoked or is invoked in non-interactive mode so it doesn't read *anything*
+2017-01-27 17:54:53	alex4	Hmm yeah makes sense
+2017-01-27 17:55:35	geekosaur	which one is true depends on the terminal emulator, and how you work around it depends on that too :/
+2017-01-27 18:00:19	<--	_ashbreeze_ (~mark@c-73-82-100-21.hsd1.ga.comcast.net) has quit (Remote host closed the connection)
+2017-01-27 18:00:22	alex4	Could I perhaps spawn a terminal emulator, passing the command to be executed inside?
+2017-01-27 18:03:07	-->	theDon_ (~td@p5DDAB028.dip0.t-ipconnect.de) has joined #xmonad
+2017-01-27 18:06:28	<--	theDon (~td@p579D2D59.dip0.t-ipconnect.de) has quit (Ping timeout: 248 seconds)
+2017-01-27 18:06:28	--	theDon_ is now known as theDon
+2017-01-27 18:13:13	-->	_ashbreeze_ (~mark@c-73-82-100-21.hsd1.ga.comcast.net) has joined #xmonad
+2017-01-27 18:16:34	<--	skapazzo (~skapazzo@151.9.205.1) has quit (Quit: Lost terminal)
+2017-01-27 18:20:28	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-01-27 18:21:01	<--	target_i (~target_i@5.101.215.117) has quit (Quit: leaving)
+2017-01-27 18:21:57	<--	stepnem (~stepnem@185.112.167.114) has quit (Ping timeout: 248 seconds)
+2017-01-27 18:25:09	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 248 seconds)
+2017-01-27 18:25:52	-->	crobbins (~crobbins@70.158.100.47) has joined #xmonad
+2017-01-27 18:27:01	geekosaur	alex4, that's more or less what xterm -e is... except it's not as simple as that because no, you cannot inject a command as if it were typed at an interactive shell
+2017-01-27 18:28:17	alex4	Yeah I tried it and no luck
+2017-01-27 18:30:30	alex4	I suppose the real issue is that if I, in a terminal, type "bash -c vim", it will be run as a non-interactive shell, as far as I know, which is not what I want
+2017-01-27 18:32:19	alex4	I wouldn't want to make every non-interactive shell run the script, because the script would be run a boatoad of times
+2017-01-27 18:33:49	<--	thc202 (~thc202@unaffiliated/thc202) has quit (Read error: Connection reset by peer)
+2017-01-27 18:37:07	<--	crobbins (~crobbins@70.158.100.47) has quit (Remote host closed the connection)
+2017-01-27 18:37:36	-->	crobbins (~crobbins@70.158.100.47) has joined #xmonad
+2017-01-27 18:41:11	<--	jan-sipr (~quassel@213-194-218-16-static.vivo.cz) has quit (Ping timeout: 255 seconds)
+2017-01-27 18:50:11	<--	Gurkenglas (~Gurkengla@dslb-188-103-065-237.188.103.pools.vodafone-ip.de) has quit (Ping timeout: 255 seconds)
+2017-01-27 18:50:23	-->	crobbins_ (~crobbins@166.177.186.70) has joined #xmonad
+2017-01-27 18:52:46	<--	crobbins (~crobbins@70.158.100.47) has quit (Ping timeout: 256 seconds)
+2017-01-27 18:58:10	<--	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has quit (Remote host closed the connection)
+2017-01-27 18:58:11	<--	mudri (~mudri@firewall1a.robinson.cam.ac.uk) has quit (Ping timeout: 240 seconds)
+2017-01-27 18:59:04	<--	crobbins_ (~crobbins@166.177.186.70) has quit (Ping timeout: 240 seconds)
+2017-01-27 18:59:50	-->	mudri (~mudri@firewall1a.robinson.cam.ac.uk) has joined #xmonad
+2017-01-27 19:00:16	--	irc: disconnected from server
+2017-01-27 19:23:19	-->	alex4 (~alex@cpe-76-84-115-171.neb.res.rr.com) has joined #xmonad
+2017-01-27 19:23:19	--	Topic for #xmonad is "xmonad: the tiling window manager with formally proven extensions | xmonad 0.12 released! | http://xmonad.org | http://xmonad.org/faq | cheatsheet: http://bit.ly/gz1R4"
+2017-01-27 19:23:19	--	Topic set by enthropy (~aavogt@d157-103-21.home4.cgocable.net) on Tue, 22 Dec 2015 16:04:55
+2017-01-27 19:23:20	--	Channel #xmonad: 187 nicks (0 ops, 1 voice, 186 normals)
+2017-01-27 19:23:20	--	URL for #xmonad: http://xmonad.org
+2017-01-27 19:23:21	--	Channel created on Tue, 24 Apr 2007 23:33:15
+2017-01-27 19:26:00	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 252 seconds)
+2017-01-27 19:27:03	<--	jagob (~jacob@d40a9e34.rev.stofanet.dk) has quit (Remote host closed the connection)
+2017-01-27 19:34:08	<--	rieper (~riepernet@sxbeta1.geo.uni-leipzig.de) has quit (Ping timeout: 260 seconds)
+2017-01-27 19:34:15	-->	rieper (~riepernet@sxbeta1.geo.uni-leipzig.de) has joined #xmonad
+2017-01-27 19:38:04	-->	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has joined #xmonad
+2017-01-27 19:42:09	<--	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has quit (Client Quit)
+2017-01-27 19:43:16	-->	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has joined #xmonad
+2017-01-27 19:48:36	<--	wonko7 (~wonko7@2a01:e35:2e74:a2c0:f9d6:127d:ab36:636) has quit (Ping timeout: 245 seconds)
+2017-01-27 19:48:45	<--	avn (~avn@78-56-108-78.static.zebra.lt) has quit (Ping timeout: 240 seconds)
+2017-01-27 19:51:00	-->	avn (~avn@78-56-108-78.static.zebra.lt) has joined #xmonad
+2017-01-27 19:53:01	-->	wonko7 (~wonko7@2a01:e35:2e74:a2c0:f9d6:127d:ab36:636) has joined #xmonad
+2017-01-27 19:57:46	-->	mekeor (~mekeor@2001:a61:2279:9f01:529f:8a6d:6600:bd6f) has joined #xmonad
+2017-01-27 19:58:14	<--	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has quit (Quit: WeeChat 1.7)
+2017-01-27 20:13:50	-->	sanitypassing (~sanitypas@unaffiliated/sanitypassing) has joined #xmonad
+2017-01-27 20:21:55	-->	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has joined #xmonad
+2017-01-27 20:21:55	<--	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has quit (Changing host)
+2017-01-27 20:21:55	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-01-27 20:25:40	<--	wonko7 (~wonko7@2a01:e35:2e74:a2c0:f9d6:127d:ab36:636) has quit (Ping timeout: 256 seconds)
+2017-01-27 20:26:58	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 258 seconds)
+2017-01-27 20:34:54	-->	wonko7 (~wonko7@2a01:e35:2e74:a2c0:f9d6:127d:ab36:636) has joined #xmonad
+2017-01-27 20:36:25	-->	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has joined #xmonad
+2017-01-27 20:36:26	<--	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has quit (Changing host)
+2017-01-27 20:36:26	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-01-27 20:56:54	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 245 seconds)
+2017-01-27 20:58:08	<--	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has quit (Remote host closed the connection)
+2017-01-27 20:59:22	alex4	 /join #haskell
+2017-01-27 20:59:59	<--	ft (~ft@shell.chaostreff-dortmund.de) has quit (Read error: Connection reset by peer)
+2017-01-27 21:03:09	-->	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has joined #xmonad
+2017-01-27 21:14:51	--	irc: disconnected from server
+2017-01-27 21:23:48	-->	alex4 (~alex@cpe-76-84-115-171.neb.res.rr.com) has joined #xmonad
+2017-01-27 21:23:48	--	Topic for #xmonad is "xmonad: the tiling window manager with formally proven extensions | xmonad 0.12 released! | http://xmonad.org | http://xmonad.org/faq | cheatsheet: http://bit.ly/gz1R4"
+2017-01-27 21:23:48	--	Topic set by enthropy (~aavogt@d157-103-21.home4.cgocable.net) on Tue, 22 Dec 2015 16:04:55
+2017-01-27 21:23:48	--	Channel #xmonad: 186 nicks (0 ops, 1 voice, 185 normals)
+2017-01-27 21:23:48	--	URL for #xmonad: http://xmonad.org
+2017-01-27 21:23:50	--	Channel created on Tue, 24 Apr 2007 23:33:15
+2017-01-27 21:35:31	-->	ft (~ft@shell.chaostreff-dortmund.de) has joined #xmonad
+2017-01-27 21:53:09	-->	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has joined #xmonad
+2017-01-27 21:53:10	<--	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has quit (Changing host)
+2017-01-27 21:53:10	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-01-27 22:02:46	<--	mekeor (~mekeor@2001:a61:2279:9f01:529f:8a6d:6600:bd6f) has quit (Quit: sry)
+2017-01-27 22:06:02	<--	jao (~jao@pdpc/supporter/professional/jao) has quit (Ping timeout: 245 seconds)
+2017-01-27 22:10:41	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 240 seconds)
+2017-01-27 22:41:55	-->	mkaindl_ (~mkaindl@pD9E61868.dip0.t-ipconnect.de) has joined #xmonad
+2017-01-27 22:45:57	<--	mkaindl (~mkaindl@pD9E6169C.dip0.t-ipconnect.de) has quit (Ping timeout: 260 seconds)
+2017-01-27 22:45:58	--	mkaindl_ is now known as mkaindl
+2017-01-27 22:58:08	<--	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has quit (Remote host closed the connection)
+2017-01-27 23:02:46	-->	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has joined #xmonad
+2017-01-27 23:06:46	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-01-27 23:11:24	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 252 seconds)
+2017-01-27 23:55:19	-->	dmwit_ (~dmwit@97-120-26-99.ptld.qwest.net) has joined #xmonad
+2017-01-27 23:58:19	<--	dmwit (~dmwit@75-164-128-111.ptld.qwest.net) has quit (Ping timeout: 255 seconds)
+2017-01-28 00:07:28	-->	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has joined #xmonad
+2017-01-28 00:07:28	<--	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has quit (Changing host)
+2017-01-28 00:07:28	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-01-28 00:12:15	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 255 seconds)
+2017-01-28 00:15:14	-->	vados (~user@188.163.32.197) has joined #xmonad
+2017-01-28 00:31:33	--	irc: disconnected from server
+2017-01-28 13:18:11	-->	alex4 (~alex@cpe-97-98-226-199.neb.res.rr.com) has joined #xmonad
+2017-01-28 13:18:11	--	Topic for #xmonad is "xmonad: the tiling window manager with formally proven extensions | xmonad 0.12 released! | http://xmonad.org | http://xmonad.org/faq | cheatsheet: http://bit.ly/gz1R4"
+2017-01-28 13:18:11	--	Topic set by enthropy (~aavogt@d157-103-21.home4.cgocable.net) on Tue, 22 Dec 2015 16:04:55
+2017-01-28 13:18:11	--	Channel #xmonad: 197 nicks (0 ops, 1 voice, 196 normals)
+2017-01-28 13:18:11	--	URL for #xmonad: http://xmonad.org
+2017-01-28 13:18:13	--	Channel created on Tue, 24 Apr 2007 23:33:15
+2017-01-28 13:22:17	-->	burp (~quassel@tobias-neumann.eu) has joined #xmonad
+2017-01-28 13:38:06	-->	madjestic (~madjestic@92.110.198.44) has joined #xmonad
+2017-01-28 13:49:51	madjestic	hey guys, can somebody help with this one?: http://lpaste.net/351745 (windows W.swapDown does not work with latest and I have difficulties figuring out what's the correct way to do it now)
+2017-01-28 13:51:03	byorgey	madjestic: looks to me like the problem is that you have multiple versions of xmonad installed
+2017-01-28 13:51:17	byorgey	and the compiler is getting confused
+2017-01-28 13:52:15	madjestic	byorgey: I'll check, thanks
+2017-01-28 13:52:28	byorgey	or wait, do you have an XMonad/ directory locally?  It looks like you have xmonad installed but you are also compiling with a current directory such that it is finding the StackSet module from the local filesystem
+2017-01-28 13:53:20	byorgey	did you put your xmonad.hs in the same directory as the root of the xmonad source code?
+2017-01-28 13:53:35	madjestic	my xmonad.hs is in ~/.xmonad
+2017-01-28 13:53:43	<--	burp (~quassel@tobias-neumann.eu) has quit (Remote host closed the connection)
+2017-01-28 13:53:48	madjestic	what I find suspicious is 2 symlinks: XMonad -> /usr/portage/distfiles/darcs-src/xmonad/src/XMonad
+2017-01-28 13:53:57	madjestic	and XMonadContrib -> /usr/portage/distfiles/darcs-src/XMonadContrib//XMonad/
+2017-01-28 13:54:13	byorgey	yeah, that would do it.  Where did those come from?
+2017-01-28 13:54:30	byorgey	also, xmonad hasn't used darcs for a while now.
+2017-01-28 13:54:40	byorgey	if I were you I would just delete those symlinks.
+2017-01-28 13:54:56	madjestic	byorgey: no clue :) some copy-paste from a few years ago I recon
+2017-01-28 13:55:08	-->	burp (~quassel@tobias-neumann.eu) has joined #xmonad
+2017-01-28 13:55:16	byorgey	fair enough =)
+2017-01-28 13:56:46	madjestic	byorgey: woohoo, that fixed it
+2017-01-28 13:57:03	madjestic	thank!
+2017-01-28 13:57:45	byorgey	great, you're welcome!
+2017-01-28 14:06:52	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-01-28 14:11:41	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 240 seconds)
+2017-01-28 14:18:48	<--	bahtiyar (~bahtiyar@78.187.193.35) has quit (Remote host closed the connection)
+2017-01-28 14:47:38	<--	anton__ (~patrick@174-193-190-90.dyn.estpak.ee) has quit (Remote host closed the connection)
+2017-01-28 14:58:06	<--	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has quit (Remote host closed the connection)
+2017-01-28 15:00:31	<--	wonko7 (~wonko7@2a01:e35:2e74:a2c0:30ed:fa60:dfc8:d21d) has quit (Ping timeout: 258 seconds)
+2017-01-28 15:02:40	-->	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has joined #xmonad
+2017-01-28 15:05:39	-->	wonko7 (~wonko7@2a01:e35:2e74:a2c0:30ed:fa60:dfc8:d21d) has joined #xmonad
+2017-01-28 15:07:35	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-01-28 15:12:15	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 256 seconds)
+2017-01-28 15:15:22	-->	vados`` (~user@188.163.32.197) has joined #xmonad
+2017-01-28 15:19:11	<--	vados` (~user@188.163.32.197) has quit (Ping timeout: 240 seconds)
+2017-01-28 15:21:27	wagle	strting to use xmonad.  it expanded fixed size windows to fill.  I made them float, but how to i put them back to there natural sizes?
+2017-01-28 15:27:41	wagle	i have two windows that are 512x512 pixels, and should float.  i got them to float, but am not finding a way to get them back to 512x512
+2017-01-28 15:27:45	<--	jan-sipr (~quassel@213-194-218-16-static.vivo.cz) has quit (Ping timeout: 276 seconds)
+2017-01-28 15:28:44	geekosaur	you can't, once they've been tiled the original size is gone (unless you can convince the application that created the window to remember it and reapply the size)
+2017-01-28 15:29:07	wagle	thats what i was starting to wonder
+2017-01-28 15:29:18	geekosaur	normally you would float the window from the manageHook, before the layout can run on it; then it will keep its pogram specified size
+2017-01-28 15:29:25	wagle	how do i start them out as tiled?
+2017-01-28 15:30:23	wagle	yeah, except I dont want to list 50 apps to tiling, i think
+2017-01-28 15:30:54	geekosaur	tiled is what they do by default; you have to override that in the manageHook
+2017-01-28 15:30:55	wagle	oh, and I'm starting up the apps in a chroot
+2017-01-28 15:31:28	geekosaur	which is why you lost their initial sizes, because the tiling algorithm(s) selected by the layoutHook overrode the program sizes
+2017-01-28 15:32:03	wagle	i have to relog to apply changes to configs?
+2017-01-28 15:33:44	geekosaur	mod-q, possibly followed by mod-shift-space if you changed the layout in ways that didn't change its type (e.g. tweaking numeric values)
+2017-01-28 15:34:25	wagle	ok, thanks
+2017-01-28 15:34:28	-->	BartAdv (uid90451@gateway/web/irccloud.com/x-hitvuxkmszgtssku) has joined #xmonad
+2017-01-28 15:38:55	wagle	wrong channel
+2017-01-28 15:39:06	wagle	ooops wrong wrong chanel
+2017-01-28 15:39:12	shapr	haha
+2017-01-28 15:39:57	geekosaur	...wrong right channel?
+2017-01-28 15:43:10	wagle	is the a command line thing to start app in floating mode?
+2017-01-28 15:43:21	wagle	is there a command line thing to start app in floating mode?
+2017-01-28 15:43:29	wagle	i saw someone wish for it
+2017-01-28 15:50:11	geekosaur	no. there is no reliable way to match an X11 window to the action that started it, so no reliable way to apply it that can't be derailed by e.g. a notification or dialog popping up unexpectedly
+2017-01-28 15:50:32	wagle	ah
+2017-01-28 15:54:06	<--	jagobdue (~jacob@d40a9e34.rev.stofanet.dk) has quit (Remote host closed the connection)
+2017-01-28 15:55:25	-->	jagobdue (~jacob@d40a9e34.rev.stofanet.dk) has joined #xmonad
+2017-01-28 15:55:36	geekosaur	in theory you can do things that grab the next window and hope. you'd probably start from XMonad.Util.SpawnOn (which relies on modern X11 programs setting _NET_WM_PID and the launching command not forking or contacting a factory server) and modify it to get its cue from an X11 root window property instead of from spawnOn
+2017-01-28 15:56:32	geekosaur	(actually that's not grab the next windoe and hope, but as it is reusing existing mechanisms it's easier than setting up XS from a root window property event and then writing custom manageHook foo to check the XS)
+2017-01-28 16:01:16	-->	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has joined #xmonad
+2017-01-28 16:01:17	<--	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has quit (Changing host)
+2017-01-28 16:01:17	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-01-28 16:07:28	<--	skapazzo (~skapazzo@151.9.205.1) has quit (Quit: leaving)
+2017-01-28 16:12:24	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Read error: No route to host)
+2017-01-28 16:18:09	-->	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has joined #xmonad
+2017-01-28 16:18:10	<--	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has quit (Changing host)
+2017-01-28 16:18:10	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-01-28 16:23:18	<--	vados`` (~user@188.163.32.197) has quit (Quit: yes)
+2017-01-28 16:28:38	<--	madjestic (~madjestic@92.110.198.44) has quit (Remote host closed the connection)
+2017-01-28 16:30:07	-->	kelnoky (~shao@ip1f106213.dynamic.kabel-deutschland.de) has joined #xmonad
+2017-01-28 16:31:07	<--	titusg (~user@79-67-252-107.dynamic.dsl.as9105.com) has quit (Ping timeout: 245 seconds)
+2017-01-28 16:36:57	wagle	how do you reset xmonad when the config file is broken?
+2017-01-28 16:40:32	wagle	never mind, the alt key was rebound (still!!)
+2017-01-28 16:55:03	wagle	working config, version 0
+2017-01-28 16:58:02	<--	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has quit (Remote host closed the connection)
+2017-01-28 16:59:28	<--	mudri (~mudri@firewall1a.robinson.cam.ac.uk) has quit (Quit: WeeChat 1.6)
+2017-01-28 17:02:47	-->	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has joined #xmonad
+2017-01-28 17:03:08	geekosaur	xmonad --recompile && xmonad --restart
+2017-01-28 17:05:08	-->	mudri (~mudri@firewall1a.robinson.cam.ac.uk) has joined #xmonad
+2017-01-28 17:09:07	<--	overlord_tm (~andraz@213.172.234.141) has quit (Ping timeout: 260 seconds)
+2017-01-28 17:13:23	-->	_ashbreeze_ (~mark@c-73-82-100-21.hsd1.ga.comcast.net) has joined #xmonad
+2017-01-28 17:30:43	-->	rekahsoft (~rekahsoft@24-246-27-35.cable.teksavvy.com) has joined #xmonad
+2017-01-28 17:39:23	<--	seschwar (~seschwar@unaffiliated/seschwar) has quit (Quit: :wq)
+2017-01-28 17:41:05	<--	wonko7 (~wonko7@2a01:e35:2e74:a2c0:30ed:fa60:dfc8:d21d) has quit (Ping timeout: 240 seconds)
+2017-01-28 17:41:23	-->	uggwar (~uggwar@150.81-166-31.customer.lyse.net) has joined #xmonad
+2017-01-28 17:41:23	-->	burp_ (~quassel@tobias-neumann.eu) has joined #xmonad
+2017-01-28 17:41:35	<--	uggwar (~uggwar@150.81-166-31.customer.lyse.net) has quit (Client Quit)
+2017-01-28 17:44:04	<--	burp (~quassel@tobias-neumann.eu) has quit (Read error: Connection reset by peer)
+2017-01-28 17:46:24	<--	target_i (~target_i@5.101.210.80) has quit (Quit: leaving)
+2017-01-28 17:46:34	<--	mudri (~mudri@firewall1a.robinson.cam.ac.uk) has quit (Quit: WeeChat 1.6)
+2017-01-28 17:47:07	-->	mudri (~mudri@firewall1a.robinson.cam.ac.uk) has joined #xmonad
+2017-01-28 17:52:51	-->	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has joined #xmonad
+2017-01-28 17:57:27	-->	wonko7 (~wonko7@2a01:e35:2e74:a2c0:30ed:fa60:dfc8:d21d) has joined #xmonad
+2017-01-28 17:59:23	--	irc: disconnected from server
+2017-01-28 18:02:50	-->	alex4_ (~alex@cpe-97-98-226-199.neb.res.rr.com) has joined #xmonad
+2017-01-28 18:02:50	--	Topic for #xmonad is "xmonad: the tiling window manager with formally proven extensions | xmonad 0.12 released! | http://xmonad.org | http://xmonad.org/faq | cheatsheet: http://bit.ly/gz1R4"
+2017-01-28 18:02:50	--	Topic set by enthropy (~aavogt@d157-103-21.home4.cgocable.net) on Tue, 22 Dec 2015 16:04:55
+2017-01-28 18:02:50	--	Channel #xmonad: 195 nicks (0 ops, 1 voice, 194 normals)
+2017-01-28 18:02:51	--	URL for #xmonad: http://xmonad.org
+2017-01-28 18:02:51	--	Channel created on Tue, 24 Apr 2007 23:33:15
+2017-01-28 18:04:29	<--	theDon (~td@p5DDAB028.dip0.t-ipconnect.de) has quit (Ping timeout: 240 seconds)
+2017-01-28 18:04:30	--	theDon_ is now known as theDon
+2017-01-28 18:16:08	--	irc: disconnected from server
+2017-01-28 18:17:35	-->	alex4 (~alex@cpe-97-98-226-199.neb.res.rr.com) has joined #xmonad
+2017-01-28 18:17:35	--	Topic for #xmonad is "xmonad: the tiling window manager with formally proven extensions | xmonad 0.12 released! | http://xmonad.org | http://xmonad.org/faq | cheatsheet: http://bit.ly/gz1R4"
+2017-01-28 18:17:35	--	Topic set by enthropy (~aavogt@d157-103-21.home4.cgocable.net) on Tue, 22 Dec 2015 16:04:55
+2017-01-28 18:17:35	--	Channel #xmonad: 195 nicks (0 ops, 1 voice, 194 normals)
+2017-01-28 18:17:35	--	URL for #xmonad: http://xmonad.org
+2017-01-28 18:17:35	--	Channel created on Tue, 24 Apr 2007 23:33:15
+2017-01-28 18:18:50	<--	alex4_ (~alex@cpe-97-98-226-199.neb.res.rr.com) has quit (Ping timeout: 240 seconds)
+2017-01-28 18:28:22	-->	jao (~jao@pdpc/supporter/professional/jao) has joined #xmonad
+2017-01-28 18:31:59	<--	jagobdue (~jacob@d40a9e34.rev.stofanet.dk) has quit (Remote host closed the connection)
+2017-01-28 18:47:07	<--	kelnoky (~shao@ip1f106213.dynamic.kabel-deutschland.de) has quit (Quit: WeeChat 1.7)
+2017-01-28 18:58:02	<--	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has quit (Remote host closed the connection)
+2017-01-28 18:59:18	-->	theDon_ (~td@p579D2A0D.dip0.t-ipconnect.de) has joined #xmonad
+2017-01-28 19:02:48	<--	theDon (~td@p5DDA9D8C.dip0.t-ipconnect.de) has quit (Ping timeout: 252 seconds)
+2017-01-28 19:02:48	--	theDon_ is now known as theDon
+2017-01-28 19:02:54	-->	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has joined #xmonad
+2017-01-28 19:07:27	<--	jagob (~jacob@d40a9e34.rev.stofanet.dk) has quit (Remote host closed the connection)
+2017-01-28 19:12:28	<--	BartAdv (uid90451@gateway/web/irccloud.com/x-hitvuxkmszgtssku) has quit (Quit: Connection closed for inactivity)
+2017-01-28 19:16:48	<--	stepnem (~stepnem@185.112.167.114) has quit (Ping timeout: 255 seconds)
+2017-01-28 19:18:52	<--	geekosaur (allbery@dreamshell.ttuttle.net) has quit (Excess Flood)
+2017-01-28 19:19:22	-->	geekosaur (allbery@dreamshell.ttuttle.net) has joined #xmonad
+2017-01-28 19:21:41	<--	wonko7 (~wonko7@2a01:e35:2e74:a2c0:30ed:fa60:dfc8:d21d) has quit (Ping timeout: 255 seconds)
+2017-01-28 19:24:05	-->	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has joined #xmonad
+2017-01-28 19:33:27	<--	mekeor (~mekeor@2001:a61:2279:9f01:529f:8a6d:6600:bd6f) has quit (Ping timeout: 276 seconds)
+2017-01-28 19:36:06	<--	thc202 (~thc202@unaffiliated/thc202) has quit (Ping timeout: 240 seconds)
+2017-01-28 19:39:36	-->	wonko7 (~wonko7@neu67-1-82-231-74-44.fbx.proxad.net) has joined #xmonad
+2017-01-28 19:40:37	<--	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has quit (Quit: WeeChat 1.7)
+2017-01-28 20:02:07	-->	rig0rmortis (~omar@c-50-177-153-248.hsd1.ma.comcast.net) has joined #xmonad
+2017-01-28 20:03:27	<--	_ashbreeze_ (~mark@c-73-82-100-21.hsd1.ga.comcast.net) has quit (Remote host closed the connection)
+2017-01-28 20:03:28	rig0rmortis	is tere a difference in additionalKeysP syntax to use multimedia keys without a mask? here is my xmonad.hs, I can't seem to get my additional keys in additionalKeysP syntax: http://termbin.com/c73z
+2017-01-28 20:03:33	rig0rmortis	s/tere/there
+2017-01-28 20:04:54	-->	_ashbreeze_ (~mark@c-73-82-100-21.hsd1.ga.comcast.net) has joined #xmonad
+2017-01-28 20:05:19	geekosaur	the <> are always required around those key names
+2017-01-28 20:05:58	rig0rmortis	yikes, can't see how I missed that
+2017-01-28 20:05:59	geekosaur	you created a binding for pressing the keys X, F, 8, 6, ... in sequence
+2017-01-28 20:06:03	rig0rmortis	thanks for the sanity check :)
+2017-01-28 20:10:16	<--	mudri (~mudri@firewall1a.robinson.cam.ac.uk) has quit (Quit: WeeChat 1.6)
+2017-01-28 20:12:24	<--	rig0rmortis (~omar@c-50-177-153-248.hsd1.ma.comcast.net) has quit (Quit: Lost terminal)
+2017-01-28 20:57:58	<--	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has quit (Remote host closed the connection)
+2017-01-28 21:02:34	-->	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has joined #xmonad
+2017-01-28 21:04:29	-->	tmciver (~tmciver@146-115-120-239.c3-0.sth-ubr1.sbo-sth.ma.cable.rcn.com) has joined #xmonad
+2017-01-28 21:04:40	<--	tmciver (~tmciver@146-115-120-239.c3-0.sth-ubr1.sbo-sth.ma.cable.rcn.com) has left #xmonad
+2017-01-28 21:37:36	<--	Gurkenglas (~Gurkengla@dslb-188-103-065-237.188.103.pools.vodafone-ip.de) has quit (Ping timeout: 255 seconds)
+2017-01-28 22:40:41	-->	mkaindl_ (~mkaindl@p5B29817F.dip0.t-ipconnect.de) has joined #xmonad
+2017-01-28 22:45:12	<--	mkaindl (~mkaindl@pD9E61868.dip0.t-ipconnect.de) has quit (Ping timeout: 276 seconds)
+2017-01-28 22:45:13	--	mkaindl_ is now known as mkaindl
+2017-01-28 22:51:57	-->	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has joined #xmonad
+2017-01-28 22:57:57	<--	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has quit (Remote host closed the connection)
+2017-01-28 23:01:50	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 240 seconds)
+2017-01-28 23:02:41	-->	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has joined #xmonad
+2017-01-28 23:04:38	-->	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has joined #xmonad
+2017-01-28 23:04:38	<--	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has quit (Changing host)
+2017-01-28 23:04:38	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-01-28 23:09:27	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 245 seconds)
+2017-01-28 23:38:53	<--	rekahsoft (~rekahsoft@24-246-27-35.cable.teksavvy.com) has quit (Remote host closed the connection)
+2017-01-28 23:48:35	--	dmwit_ is now known as dmwit
+2017-01-28 23:53:37	-->	vados (~user@188.163.32.197) has joined #xmonad
+2017-01-28 23:55:20	<--	sanitypassing (~sanitypas@unaffiliated/sanitypassing) has quit (Quit: WeeChat 1.7)
+2017-01-29 00:05:26	-->	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has joined #xmonad
+2017-01-29 00:05:26	<--	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has quit (Changing host)
+2017-01-29 00:05:26	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-01-29 00:10:35	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 264 seconds)
+2017-01-29 00:12:06	<--	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has quit (Quit: WeeChat 1.7)
+2017-01-29 00:14:51	-->	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has joined #xmonad
+2017-01-29 00:36:04	<--	Irishluck83 (~Irishluck@unaffiliated/irishluck83) has quit (Quit: WeeChat 1.7)
+2017-01-29 00:45:50	--	irc: disconnected from server
+2017-01-29 00:48:57	-->	alex4_ (~alex@cpe-97-98-226-199.neb.res.rr.com) has joined #xmonad
+2017-01-29 00:48:57	--	Topic for #xmonad is "xmonad: the tiling window manager with formally proven extensions | xmonad 0.12 released! | http://xmonad.org | http://xmonad.org/faq | cheatsheet: http://bit.ly/gz1R4"
+2017-01-29 00:48:57	--	Topic set by enthropy (~aavogt@d157-103-21.home4.cgocable.net) on Tue, 22 Dec 2015 16:04:55
+2017-01-29 00:48:57	--	Channel #xmonad: 185 nicks (0 ops, 1 voice, 184 normals)
+2017-01-29 00:48:57	--	URL for #xmonad: http://xmonad.org
+2017-01-29 00:48:57	--	Channel created on Tue, 24 Apr 2007 23:33:15
+2017-01-29 00:48:59	<--	alex4 (~alex@cpe-97-98-226-199.neb.res.rr.com) has quit (Ping timeout: 264 seconds)
+2017-01-29 00:57:58	<--	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has quit (Remote host closed the connection)
+2017-01-29 01:02:34	-->	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has joined #xmonad
+2017-01-29 01:06:16	-->	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has joined #xmonad
+2017-01-29 01:06:16	<--	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has quit (Changing host)
+2017-01-29 01:06:16	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-01-29 01:11:10	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 240 seconds)
+2017-01-29 01:25:28	-->	edvorg (~edvorg@113.185.26.135) has joined #xmonad
+2017-01-29 01:39:57	<--	edvorg (~edvorg@113.185.26.135) has quit (Remote host closed the connection)
+2017-01-29 01:41:59	-->	edvorg (~edvorg@113.185.22.118) has joined #xmonad
+2017-01-29 01:46:14	-->	hoschi_ (~hoschi@pD9E0B2D4.dip0.t-ipconnect.de) has joined #xmonad
+2017-01-29 02:01:10	<--	edvorg (~edvorg@113.185.22.118) has quit (Ping timeout: 240 seconds)
+2017-01-29 02:08:16	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-01-29 02:13:14	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 258 seconds)
+2017-01-29 02:27:25	--	irc: disconnected from server

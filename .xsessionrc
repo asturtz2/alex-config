@@ -1,3 +1,6 @@
 #!/bin/bash
 
+# Load Resources
+xrdb -merge .Xresources
 feh --bg-scale ~/Pictures/meadow.jpg &
+wal -i "$(< "${HOME}/.cache/wal/wal")"

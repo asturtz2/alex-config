@@ -1,0 +1,10 @@
+2017-01-27 11:59:58	--	irc: connecting to server xmonad@chat.freenode.org/6667...
+2017-01-27 11:59:58	=!=	irc: address "xmonad@chat.freenode.org" not found
+2017-01-27 11:59:58	=!=	irc: error: No address associated with hostname
+2017-01-27 11:59:58	--	irc: reconnecting to server in 10 seconds
+2017-01-27 12:00:08	--	irc: reconnecting to server...
+2017-01-27 12:00:08	--	irc: connecting to server xmonad@chat.freenode.org/6667...
+2017-01-27 12:00:08	=!=	irc: address "xmonad@chat.freenode.org" not found
+2017-01-27 12:00:08	=!=	irc: error: No address associated with hostname
+2017-01-27 12:00:08	--	irc: reconnecting to server in 20 seconds
+2017-01-27 12:00:13	--	irc: disconnected from server

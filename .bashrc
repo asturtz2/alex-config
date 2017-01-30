@@ -115,7 +115,7 @@ fi
 # MODS
 
 # wal config
-wal -r -t
+(wal -r -t &)
 source "$HOME/.cache/wal/colors.sh"
 
 # Aliases for config git repo
@@ -129,7 +129,7 @@ alias vim=nvim
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
 #Default editor
-EDITOR='vim'
+EDITOR=nvim
 
 #Rvt config
 RTV_URLVIEWER=urlview

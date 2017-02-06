@@ -1,20 +1,22 @@
 
 " Startup {{{
+" augroup configgroup
+"     autocmd FileType hs setlocal expandtab
+"     autocmd FileType hs setlocal tabstop = 8
+"     autocmd FileType hs setlocal softtabstop = 4
+"     autocmd FileType hs setlocal shiftwidth = 4
 " }}}
 
 " Core Mappings {{{
 
 " Basic mappings {{{
 map <Space> <Leader>
+let maplocalleader = ","
 map <CR> :
 "}}}
 
-" Folding mappings {{{
-noremap , za
-"}}}
-
 " Buffer mappings {{{
-map <Leader>d <Leader>v:count:bd<CR> 
+map <Leader>d :bd<CR> 
 map <Leader>1 <Plug>AirlineSelectTab1
 map <Leader>2 <Plug>AirlineSelectTab2
 map <Leader>3 <Plug>AirlineSelectTab3
@@ -30,6 +32,13 @@ map <Leader>9 <Plug>AirlineSelectTab9
 map <silent> <Leader>c :nohlsearch<CR>
 map <Leader>rv :so ~/.config/nvim/init.vim<CR>
 map <Leader>pi :PlugInstall<CR>
+" }}}
+
+" Split mappings {{{
+noremap <Leader>j <C-w>j
+noremap <Leader>k <C-w>k
+noremap <Leader>h <C-w>h
+noremap <Leader>l <C-w>l
 " }}}
 " }}}
 
@@ -53,15 +62,16 @@ let loaded_netrwPlugin=1
 " }}}
 
 " NERDTree {{{
-map <Leader>f :NERDTreeToggle<CR>
-map <Leader>F :NERDTree %<CR>
+map <Leader>t :NERDTreeToggle<CR>
+map <Leader>T :NERDTree %<CR>
 " }}}
 
 " CtrlP {{{
-map <Leader><CR> :CtrlPBuffer<CR>
-map <Leader>o :CtrlP<CR>
+map <Leader>fo :CtrlP<CR>
+map <Leader>fl :CtrlPBuffer<CR>
+map <Leader>fu :CtrlPMRU<CR>
 let g:ctrlp_show_hidden = 1 "Show hidden files in control p
-let g:ctrlp_user_command = 'ag %s -l -g "" --nocolor --hidden'
+let g:ctrlp_user_command = 'ag %s -l -g "" -f --nocolor --hidden'
 let g:ctrlp_use_caching = 0
 " }}}
 
@@ -73,22 +83,21 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 let g:syntastic_cs_checkers=['syntax', 'semantic', 'issues']
 " }}}
 
 " Fugitive {{{
-map <Leader>gs :Gstatus<CR>
-map <Leader>gc :Gcommit -m
-map <Leader>gm :Gmerge
-map <Leader>gpl :Gpull
-map <Leader>gps :Gpush
-map <Leader>gf :Gfetch
-map <Leader>gg :Ggrep
-map <Leader>gl :Glog
-map <Leader>gd :Gdiff
-map <Leader>gb :Gblame
+map <Leader>gs :GStatus<CR>
+map <Leader>gc :GCommit -m
+map <Leader>gm :GMerge
+map <Leader>gpl :GPull
+map <Leader>gps :GPush
+map <Leader>gf :GFetch
+map <Leader>gg :GGrep
+map <Leader>gl :GLog
+map <Leader>gd :GDiff
+map <Leader>gb :GBlame
 " }}}
 
 " Gundo {{{
@@ -99,14 +108,18 @@ map <Leader>u :GundoToggle<CR>
 call plug#begin()
 
 " Core {{{
-Plug 'ctrlpvim/ctrlp.vim', { 'on' : ['CtrlP', 'CtrlPBuffer'] }
+Plug 'ctrlpvim/ctrlp.vim', { 'on' : ['CtrlP', 'CtrlPBuffer', 'CtrlPMRU'] }
 Plug 'scrooloose/nerdtree', { 'on' : 'NERDTreeToggle' }
-Plug 'tpope/vim-fugitive', { 'on' : 'GStatus' }
+Plug 'tpope/vim-fugitive', { 'on' : ['GStatus', 'GBlame', 'GLog', 'GDiff'] }
+Plug 'xolox/vim-easytags'
+Plug 'xolox/vim-misc'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-sleuth'
 Plug 'sjl/gundo.vim', { 'on' : 'GundoToggle' }
 Plug 'dylanaraps/wal'
 Plug 'vim-airline/vim-airline'
@@ -132,14 +145,39 @@ Plug 'OpenAADL/AADLib', { 'rtp': 'share/vim/', 'for' : 'aadl' }
 Plug 'adimit/prolog.vim', { 'for' : 'pl'}
 " }}}
 
+" Latex {{{
+Plug 'lervag/vimtex'
+" }}}
+
 call plug#end()
 " }}}
 
 " Filetype options{{{
 
 " C#{{{
+
+" Options{{{
 let g:OmniSharp_selector_ui='ctrlp'
 let g:OmniSharp_want_snippet=1
+" }}}
+
+" Keybindings{{{
+map <LocalLeader>b :OmniSharpBuildAsync<CR>
+map <LocalLeader>g :OmniSharpGotoDefinition<CR>
+map <LocalLeader>i :OmniSharpFindImplementations<CR>
+map <LocalLeader>ft :OmniSharpFindType<CR>
+map <LocalLeader>fs :OmniSharpFindSymbol<CR>
+map <LocalLeader>fu :OmniSharpFindUsages<CR>
+map <LocalLeader>fm :OmniSharpFindMembers<CR>
+map <LocalLeader>x :OmniSharpFixIssue<CR>
+map <LocalLeader>l :OmniSharpTypeLookup<CR>
+map <LocalLeader>d :OmniSharpDocumentation<CR>
+map <LocalLeader>a :OmniSharpGetCodeActions<CR>
+map <LocalLeader>r :OmniSharpRename<CR>
+map <LocalLeader>m :OmniSharpCodeFormat<CR>
+map <LocalLeader>s :OmniSharpReloadSolution<CR>
+" }}}
+
 " }}}
 " }}}
 " UI {{{
@@ -148,7 +186,6 @@ let g:airline_theme='term'
 let g:airline_powerline_fonts=1
 let g:airline#extensions#tabline#enabled = 1
 let g:airline#extensions#tabline#buffer_idx_mode = 1
-let g:airline#extensions#tabline#buffer_nr_show = 1
 let g:airline#extensions#tabline#tab_nr_type = 1 " tab number
 let g:airline#extensions#tabline#show_tab_nr = 1
 let g:airline#extensions#tabline#fnamemod = ':t:.'

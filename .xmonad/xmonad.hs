@@ -27,12 +27,10 @@ main = do
         , focusedBorderColor = focusedBorderColor'
         } `additionalKeys`
         [ toggleFullScreen
-	, firefox
-	, zathura
+        , firefox
+        , zathura
         , rtv
-	, vim
-        , irc
-	, fileManager
+        , vim
         ]
 
 -- Basic configs
@@ -67,10 +65,8 @@ logHook' xmproc = dynamicLogWithPP xmobarPP
 
 -- Keymappings
 -- Should be of type XConfig a -> [((ButtonMask, KeySym), X ())] -> XConfig a 
-firefox = ((mod1Mask .|. shiftMask, xK_b), spawn "firefox")
+firefox = ((mod1Mask .|. shiftMask, xK_f), spawn "firefox")
 zathura = ((mod1Mask .|. shiftMask, xK_z), spawn "zathura")
-rtv     = ((mod1Mask .|. shiftMask, xK_r), runInTerm "" "rtv")
+rtv     = ((mod1Mask .|. shiftMask, xK_r), runInTerm """bash -c 'source ~/.bashrc; rtv'")
 vim     = ((mod1Mask .|. shiftMask, xK_v), runInTerm "" "nvim")
-irc     = ((mod1Mask .|. shiftMask, xK_i), runInTerm "" "weechat")
-fileManager = ((mod1Mask .|. shiftMask, xK_f), runInTerm "" "ranger")
 toggleFullScreen = ((mod1Mask, xK_f), sendMessage $ Toggle FULL)

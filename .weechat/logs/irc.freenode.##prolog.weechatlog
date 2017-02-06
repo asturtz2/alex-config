@@ -847,3 +847,21 @@
 2017-01-29 02:22:31	dmiles	#nars is also building a new logic system . Probability Logic Programming
 2017-01-29 02:23:02	dmiles	#Genifer is doing the same
 2017-01-29 02:27:25	--	irc: disconnected from server
+2017-01-31 11:16:59	-->	alex4 (~alex@wlan-4-29.unl.edu) has joined ##prolog
+2017-01-31 11:16:59	--	Topic for ##prolog is ": PROLOG => PROgrammation in LOGique: | SLOW MOTION CHANNEL: Ask your question, then wait; check back often to see answers | Tutorial: Learn Prolog Now! <http://cs.union.edu/~striegnk/learn-prolog-now/>, <http://cs.union.edu/~striegnk/learn-prolog-now/html/prolog-notes.pdf> <http://www.pathwayslms.com/swipltuts/student/index.html> | Try SWI-Prolog online: <http://swish.swi-prolog.org>"
+2017-01-31 11:16:59	--	Topic set by ttmrichter (~ttmrichte@178.62.140.82) on Thu, 16 Oct 2014 23:08:16
+2017-01-31 11:16:59	--	Channel ##prolog: 76 nicks (0 ops, 0 voices, 76 normals)
+2017-01-31 11:16:59	--	PvNotice(ChanServ): Please see the ##prolog FAQ at <http://www.pathwayslms.com/swipltuts/student/index.html>. Some more tutorials are available at <http://www.pathwayslms.com/swipltuts/>.
+2017-01-31 11:16:59	--	Channel created on Fri, 28 Aug 2009 01:20:18
+2017-01-31 11:17:47	alex4	Hey guys, does anyone know why select/4 is not available but select/3 is when I use_module(library(lists))?
+2017-01-31 11:28:16	-->	eazar001 (~ebrahim@2602:304:cf7b:efb0:68d:38ff:fed9:60fe) has joined ##prolog
+2017-01-31 11:29:04	-->	jshjsh (~jshjsh@172.58.91.102) has joined ##prolog
+2017-01-31 11:29:45	-->	Anniepoo_ (~Anniepoo@172.79.125.67) has joined ##prolog
+2017-01-31 11:31:31	<--	JoshS (~jshjsh@172.58.91.102) has quit (Ping timeout: 245 seconds)
+2017-01-31 11:35:55	-->	Anniepoo__ (~Anniepoo@172.79.125.67) has joined ##prolog
+2017-01-31 11:39:26	<--	Anniepoo_ (~Anniepoo@172.79.125.67) has quit (Ping timeout: 245 seconds)
+2017-01-31 11:53:02	<--	Zekka (~Zekka@150.135.210.141) has quit (Ping timeout: 260 seconds)
+2017-01-31 12:00:06	-->	Anniepoo_ (~Anniepoo@172.79.125.67) has joined ##prolog
+2017-01-31 12:03:39	<--	Anniepoo__ (~Anniepoo@172.79.125.67) has quit (Ping timeout: 240 seconds)
+2017-01-31 12:17:04	<--	Anniepoo_ (~Anniepoo@172.79.125.67) has quit (Ping timeout: 240 seconds)
+2017-01-31 12:22:57	--	irc: disconnected from server

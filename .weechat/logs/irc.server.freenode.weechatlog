@@ -1345,3 +1345,241 @@
 2017-01-30 02:26:15	--	End of /MOTD command.
 2017-01-30 02:26:15	--	User mode [+i] by alex4_
 2017-01-30 03:45:58	--	irc: disconnected from server
+2017-01-31 11:16:44	--	irc: connecting to server chat.freenode.org/6667...
+2017-01-31 11:16:45	--	irc: connected to chat.freenode.org/6667 (91.217.189.42)
+2017-01-31 11:16:45	--	sinisalo.freenode.net: *** Looking up your hostname...
+2017-01-31 11:16:45	--	sinisalo.freenode.net: *** Checking Ident
+2017-01-31 11:16:45	--	sinisalo.freenode.net: *** Found your hostname
+2017-01-31 11:16:53	--	sinisalo.freenode.net: *** No Ident response
+2017-01-31 11:16:53	--	Welcome to the freenode Internet Relay Chat Network alex4
+2017-01-31 11:16:53	--	Your host is sinisalo.freenode.net[91.217.189.42/6667], running version ircd-seven-1.1.4
+2017-01-31 11:16:53	--	This server was created Wed Jan 18 2017 at 02:26:19 CET
+2017-01-31 11:16:53	--	sinisalo.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-01-31 11:16:53	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-01-31 11:16:53	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 WHOX KNOCK ETRACE :are supported by this server
+2017-01-31 11:16:53	--	SAFELIST ELIST=CTU CPRIVMSG CNOTICE :are supported by this server
+2017-01-31 11:16:53	--	There are 136 users and 89537 invisible on 31 servers
+2017-01-31 11:16:53	--	24 :IRC Operators online
+2017-01-31 11:16:53	--	18 :unknown connection(s)
+2017-01-31 11:16:53	--	56685 :channels formed
+2017-01-31 11:16:53	--	I have 4552 clients and 1 servers
+2017-01-31 11:16:53	--	4552 4608 :Current local users 4552, max 4608
+2017-01-31 11:16:53	--	89673 91095 :Current global users 89673, max 91095
+2017-01-31 11:16:53	--	Highest connection count: 4609 (4608 clients) (135589 connections received)
+2017-01-31 11:16:53	--	- sinisalo.freenode.net Message of the Day -
+2017-01-31 11:16:53	--	- Welcome to sinisalo.freenode.net in Stockholm, SE.
+2017-01-31 11:16:53	--	- Thanks to http://www.portlane.com/ for sponsoring
+2017-01-31 11:16:53	--	- this server!
+2017-01-31 11:16:53	--	-
+2017-01-31 11:16:53	--	-
+2017-01-31 11:16:53	--	- SINISALO, (ANNA) JOHANNA (1958-), a Finnish science fiction
+2017-01-31 11:16:53	--	- and fantasy novelist and a script writer. Her novel 'Not
+2017-01-31 11:16:53	--	- Before Sundown' (orig. 'Ennen päivänlaskua ei voi'
+2017-01-31 11:16:53	--	- published in Finnish in 2000, when it also won the biggest
+2017-01-31 11:16:53	--	- literature award of Finland) was awarded The James Tiptree
+2017-01-31 11:16:53	--	- Jr. award in 2004.  She was nominated for a Nebula award in
+2017-01-31 11:16:53	--	- 2009 for her short story Baby Doll.  Their most recent work
+2017-01-31 11:16:53	--	- includes screenwriting for the film 'Iron Sky'.
+2017-01-31 11:16:53	--	-
+2017-01-31 11:16:53	--	- Welcome to freenode - supporting the free and open source
+2017-01-31 11:16:53	--	- software communities since 1998.
+2017-01-31 11:16:53	--	-
+2017-01-31 11:16:53	--	- By connecting to freenode you indicate that you have read and
+2017-01-31 11:16:53	--	- accept our policies as set out on http://www.freenode.net
+2017-01-31 11:16:53	--	- freenode runs an open proxy scanner. Please join #freenode for
+2017-01-31 11:16:53	--	- any network-related questions or queries, where a number of
+2017-01-31 11:16:53	--	- volunteer staff and helpful users will be happy to assist you.
+2017-01-31 11:16:53	--	-
+2017-01-31 11:16:53	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-01-31 11:16:53	--	- together with like-minded FOSS enthusiasts for talks and
+2017-01-31 11:16:53	--	- real-life collaboration.
+2017-01-31 11:16:53	--	-
+2017-01-31 11:16:53	--	- We would like to thank Private Internet Access
+2017-01-31 11:16:53	--	- (https://www.privateinternetaccess.com/) and the other
+2017-01-31 11:16:53	--	- organisations that help keep freenode and our other projects
+2017-01-31 11:16:53	--	- running for their sustained support.
+2017-01-31 11:16:53	--	-
+2017-01-31 11:16:53	--	- In particular we would like to thank the sponsor
+2017-01-31 11:16:53	--	- of this server, details of which can be found above.
+2017-01-31 11:16:53	--	-
+2017-01-31 11:16:53	--	End of /MOTD command.
+2017-01-31 11:16:53	--	User mode [+i] by alex4
+2017-01-31 11:16:59	--	#prolog: ##prolog :Forwarding to another channel
+2017-01-31 12:22:57	--	irc: disconnected from server
+2017-02-01 09:18:35	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-01 09:18:36	--	irc: connected to chat.freenode.org/6667 (195.148.124.79)
+2017-02-01 09:18:36	--	rajaniemi.freenode.net: *** Looking up your hostname...
+2017-02-01 09:18:36	--	rajaniemi.freenode.net: *** Checking Ident
+2017-02-01 09:18:37	--	rajaniemi.freenode.net: *** Found your hostname
+2017-02-01 09:18:42	--	rajaniemi.freenode.net: *** No Ident response
+2017-02-01 09:18:42	--	irc: nickname "alex4" is already in use, trying nickname "alex4_"
+2017-02-01 09:18:42	--	Welcome to the freenode Internet Relay Chat Network alex4_
+2017-02-01 09:18:42	--	Your host is rajaniemi.freenode.net[195.148.124.79/6667], running version ircd-seven-1.1.4
+2017-02-01 09:18:42	--	This server was created Tue Jan 3 2017 at 19:04:46 EET
+2017-02-01 09:18:42	--	rajaniemi.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-02-01 09:18:42	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-02-01 09:18:42	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 WHOX SAFELIST ELIST=CTU :are supported by this server
+2017-02-01 09:18:42	--	KNOCK CPRIVMSG CNOTICE ETRACE :are supported by this server
+2017-02-01 09:18:42	--	There are 132 users and 89841 invisible on 31 servers
+2017-02-01 09:18:42	--	24 :IRC Operators online
+2017-02-01 09:18:42	--	8 :unknown connection(s)
+2017-02-01 09:18:42	--	56689 :channels formed
+2017-02-01 09:18:42	--	I have 7279 clients and 1 servers
+2017-02-01 09:18:42	--	7279 9657 :Current local users 7279, max 9657
+2017-02-01 09:18:42	--	89973 91093 :Current global users 89973, max 91093
+2017-02-01 09:18:42	--	Highest connection count: 9658 (9657 clients) (422856 connections received)
+2017-02-01 09:18:42	--	- rajaniemi.freenode.net Message of the Day -
+2017-02-01 09:18:42	--	- Welcome to rajaniemi.freenode.net in Helsinki, Finland.  Our thanks to
+2017-02-01 09:18:42	--	- Aalto University for sponsoring this server!
+2017-02-01 09:18:42	--	-
+2017-02-01 09:18:42	--	- RAJANIEMI, Hannu  (1978-). Born in Ylivieska, Finland, Rajaniemi is the
+2017-02-01 09:18:42	--	- author of two novels and several short stories, and his debut novel 'The
+2017-02-01 09:18:42	--	- Quantum Thief' was nominated for the 2011 Locus Award for Best First
+2017-02-01 09:18:42	--	- Novel.  Rajaniemi lives in Edinburgh, Scotland where he is founding
+2017-02-01 09:18:42	--	- director of ThinkTank Maths, a commercial research organisation.
+2017-02-01 09:18:42	--	-
+2017-02-01 09:18:42	--	-
+2017-02-01 09:18:42	--	- Welcome to freenode - supporting the free and open source
+2017-02-01 09:18:42	--	- software communities since 1998.
+2017-02-01 09:18:42	--	-
+2017-02-01 09:18:42	--	- By connecting to freenode you indicate that you have read and
+2017-02-01 09:18:42	--	- accept our policies as set out on http://www.freenode.net
+2017-02-01 09:18:42	--	- freenode runs an open proxy scanner. Please join #freenode for
+2017-02-01 09:18:42	--	- any network-related questions or queries, where a number of
+2017-02-01 09:18:42	--	- volunteer staff and helpful users will be happy to assist you.
+2017-02-01 09:18:42	--	-
+2017-02-01 09:18:42	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-02-01 09:18:42	--	- together with like-minded FOSS enthusiasts for talks and
+2017-02-01 09:18:42	--	- real-life collaboration.
+2017-02-01 09:18:42	--	-
+2017-02-01 09:18:42	--	- We would like to thank Private Internet Access
+2017-02-01 09:18:42	--	- (https://www.privateinternetaccess.com/) and the other
+2017-02-01 09:18:42	--	- organisations that help keep freenode and our other projects
+2017-02-01 09:18:42	--	- running for their sustained support.
+2017-02-01 09:18:42	--	-
+2017-02-01 09:18:42	--	- In particular we would like to thank the sponsor
+2017-02-01 09:18:43	--	- of this server, details of which can be found above.
+2017-02-01 09:18:43	--	-
+2017-02-01 09:18:43	--	End of /MOTD command.
+2017-02-01 09:18:43	--	User mode [+i] by alex4_
+2017-02-01 10:31:40	--	irc: disconnected from server
+2017-02-02 12:46:54	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-02 12:46:54	--	irc: connected to chat.freenode.org/6667 (91.217.189.42)
+2017-02-02 12:46:54	--	sinisalo.freenode.net: *** Looking up your hostname...
+2017-02-02 12:46:54	--	sinisalo.freenode.net: *** Checking Ident
+2017-02-02 12:46:55	--	sinisalo.freenode.net: *** Found your hostname
+2017-02-02 12:47:00	--	sinisalo.freenode.net: *** No Ident response
+2017-02-02 12:47:01	--	irc: nickname "alex4" is already in use, trying nickname "alex4_"
+2017-02-02 12:47:01	--	Welcome to the freenode Internet Relay Chat Network alex4_
+2017-02-02 12:47:01	--	Your host is sinisalo.freenode.net[91.217.189.42/6667], running version ircd-seven-1.1.4
+2017-02-02 12:47:01	--	This server was created Wed Jan 18 2017 at 02:26:19 CET
+2017-02-02 12:47:01	--	sinisalo.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-02-02 12:47:01	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-02-02 12:47:01	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 WHOX KNOCK ETRACE :are supported by this server
+2017-02-02 12:47:01	--	SAFELIST ELIST=CTU CPRIVMSG CNOTICE :are supported by this server
+2017-02-02 12:47:01	--	There are 135 users and 89237 invisible on 31 servers
+2017-02-02 12:47:01	--	26 :IRC Operators online
+2017-02-02 12:47:01	--	17 :unknown connection(s)
+2017-02-02 12:47:01	--	56811 :channels formed
+2017-02-02 12:47:01	--	I have 2511 clients and 1 servers
+2017-02-02 12:47:01	--	2511 4742 :Current local users 2511, max 4742
+2017-02-02 12:47:01	--	89372 91095 :Current global users 89372, max 91095
+2017-02-02 12:47:01	--	Highest connection count: 4743 (4742 clients) (156201 connections received)
+2017-02-02 12:47:01	--	- sinisalo.freenode.net Message of the Day -
+2017-02-02 12:47:01	--	- Welcome to sinisalo.freenode.net in Stockholm, SE.
+2017-02-02 12:47:01	--	- Thanks to http://www.portlane.com/ for sponsoring
+2017-02-02 12:47:01	--	- this server!
+2017-02-02 12:47:01	--	-
+2017-02-02 12:47:01	--	-
+2017-02-02 12:47:01	--	- SINISALO, (ANNA) JOHANNA (1958-), a Finnish science fiction
+2017-02-02 12:47:01	--	- and fantasy novelist and a script writer. Her novel 'Not
+2017-02-02 12:47:01	--	- Before Sundown' (orig. 'Ennen päivänlaskua ei voi'
+2017-02-02 12:47:01	--	- published in Finnish in 2000, when it also won the biggest
+2017-02-02 12:47:01	--	- literature award of Finland) was awarded The James Tiptree
+2017-02-02 12:47:01	--	- Jr. award in 2004.  She was nominated for a Nebula award in
+2017-02-02 12:47:01	--	- 2009 for her short story Baby Doll.  Their most recent work
+2017-02-02 12:47:01	--	- includes screenwriting for the film 'Iron Sky'.
+2017-02-02 12:47:01	--	-
+2017-02-02 12:47:01	--	- Welcome to freenode - supporting the free and open source
+2017-02-02 12:47:01	--	- software communities since 1998.
+2017-02-02 12:47:01	--	-
+2017-02-02 12:47:01	--	- By connecting to freenode you indicate that you have read and
+2017-02-02 12:47:01	--	- accept our policies as set out on http://www.freenode.net
+2017-02-02 12:47:01	--	- freenode runs an open proxy scanner. Please join #freenode for
+2017-02-02 12:47:01	--	- any network-related questions or queries, where a number of
+2017-02-02 12:47:01	--	- volunteer staff and helpful users will be happy to assist you.
+2017-02-02 12:47:01	--	-
+2017-02-02 12:47:01	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-02-02 12:47:01	--	- together with like-minded FOSS enthusiasts for talks and
+2017-02-02 12:47:01	--	- real-life collaboration.
+2017-02-02 12:47:01	--	-
+2017-02-02 12:47:01	--	- We would like to thank Private Internet Access
+2017-02-02 12:47:01	--	- (https://www.privateinternetaccess.com/) and the other
+2017-02-02 12:47:01	--	- organisations that help keep freenode and our other projects
+2017-02-02 12:47:01	--	- running for their sustained support.
+2017-02-02 12:47:01	--	-
+2017-02-02 12:47:01	--	- In particular we would like to thank the sponsor
+2017-02-02 12:47:01	--	- of this server, details of which can be found above.
+2017-02-02 12:47:01	--	-
+2017-02-02 12:47:01	--	End of /MOTD command.
+2017-02-02 12:47:01	--	User mode [+i] by alex4_
+2017-02-02 13:30:18	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2017-02-02 13:30:18	--	irc: disconnecting from server...
+2017-02-02 13:30:18	--	irc: disconnected from server
+2017-02-02 13:30:18	--	irc: reconnecting to server in 10 seconds
+2017-02-02 13:30:28	--	irc: reconnecting to server...
+2017-02-02 13:30:28	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-02 13:30:28	--	irc: connected to chat.freenode.org/6667 (94.125.182.252)
+2017-02-02 13:30:29	--	adams.freenode.net: *** Looking up your hostname...
+2017-02-02 13:30:29	--	adams.freenode.net: *** Checking Ident
+2017-02-02 13:30:29	--	adams.freenode.net: *** Found your hostname
+2017-02-02 13:30:38	--	adams.freenode.net: *** No Ident response
+2017-02-02 13:30:38	--	Welcome to the freenode Internet Relay Chat Network alex4_
+2017-02-02 13:30:38	--	Your host is adams.freenode.net[94.125.182.252/6667], running version ircd-seven-1.1.4
+2017-02-02 13:30:38	--	This server was created Mon Jan 9 2017 at 14:25:49 CET
+2017-02-02 13:30:38	--	adams.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-02-02 13:30:38	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-02-02 13:30:38	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 CPRIVMSG CNOTICE ETRACE :are supported by this server
+2017-02-02 13:30:38	--	KNOCK SAFELIST ELIST=CTU WHOX :are supported by this server
+2017-02-02 13:30:38	--	There are 133 users and 89409 invisible on 31 servers
+2017-02-02 13:30:38	--	26 :IRC Operators online
+2017-02-02 13:30:38	--	10 :unknown connection(s)
+2017-02-02 13:30:38	--	56855 :channels formed
+2017-02-02 13:30:38	--	I have 6685 clients and 1 servers
+2017-02-02 13:30:38	--	6685 7124 :Current local users 6685, max 7124
+2017-02-02 13:30:38	--	89542 91092 :Current global users 89542, max 91092
+2017-02-02 13:30:38	--	Highest connection count: 7125 (7124 clients) (303450 connections received)
+2017-02-02 13:30:38	--	- adams.freenode.net Message of the Day -
+2017-02-02 13:30:38	--	- Welcome to adams.freenode.net. Thanks to ATW Internet Kft
+2017-02-02 13:30:38	--	- (http://www.atw.hu) for sponsoring this server!
+2017-02-02 13:30:38	--	-
+2017-02-02 13:30:38	--	- ADAMS, DOUGLAS (1952-2001).  Author of The Hitch Hikers Guide
+2017-02-02 13:30:38	--	- to the Galaxy and many other witty and humourous books,
+2017-02-02 13:30:38	--	- portrayed in his uniquely British irony. He is sorely missed
+2017-02-02 13:30:38	--	- by many millions of devoted fans. "So long and thanks for all
+2017-02-02 13:30:38	--	- the books!"
+2017-02-02 13:30:38	--	-
+2017-02-02 13:30:38	--	- Welcome to freenode - supporting the free and open source
+2017-02-02 13:30:38	--	- software communities since 1998.
+2017-02-02 13:30:38	--	-
+2017-02-02 13:30:38	--	- By connecting to freenode you indicate that you have read and
+2017-02-02 13:30:38	--	- accept our policies as set out on http://www.freenode.net
+2017-02-02 13:30:38	--	- freenode runs an open proxy scanner. Please join #freenode for
+2017-02-02 13:30:38	--	- any network-related questions or queries, where a number of
+2017-02-02 13:30:38	--	- volunteer staff and helpful users will be happy to assist you.
+2017-02-02 13:30:38	--	-
+2017-02-02 13:30:38	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-02-02 13:30:38	--	- together with like-minded FOSS enthusiasts for talks and
+2017-02-02 13:30:38	--	- real-life collaboration.
+2017-02-02 13:30:38	--	-
+2017-02-02 13:30:38	--	- We would like to thank Private Internet Access
+2017-02-02 13:30:38	--	- (https://www.privateinternetaccess.com/) and the other
+2017-02-02 13:30:38	--	- organisations that help keep freenode and our other projects
+2017-02-02 13:30:38	--	- running for their sustained support.
+2017-02-02 13:30:38	--	-
+2017-02-02 13:30:38	--	- In particular we would like to thank the sponsor
+2017-02-02 13:30:38	--	- of this server, details of which can be found above.
+2017-02-02 13:30:38	--	-
+2017-02-02 13:30:38	--	End of /MOTD command.
+2017-02-02 13:30:38	--	User mode [+i] by alex4_
+2017-02-02 13:43:57	--	irc: disconnected from server

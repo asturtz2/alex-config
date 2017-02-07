@@ -109,7 +109,6 @@ call plug#begin()
 
 " Core {{{
 Plug 'ctrlpvim/ctrlp.vim', { 'on' : ['CtrlP', 'CtrlPBuffer', 'CtrlPMRU'] }
-Plug 'scrooloose/nerdtree', { 'on' : 'NERDTreeToggle' }
 Plug 'tpope/vim-fugitive', { 'on' : ['Gstatus', 'Gblame', 'Glog', 'Gdiff'] }
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
@@ -120,7 +119,7 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-sleuth'
-Plug 'francoiscabrol/ranger.vim'
+Plug 'francoiscabrol/ranger.vim' , {'on' : 'Ranger'}
 Plug 'rbgrouleff/bclose.vim'
 Plug 'sjl/gundo.vim', { 'on' : 'GundoToggle' }
 Plug 'dylanaraps/wal'
@@ -128,6 +127,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic'
 Plug 'ervandew/supertab'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 Plug 'airblade/vim-gitgutter'
 " }}}
 

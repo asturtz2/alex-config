@@ -1812,3 +1812,432 @@
 2017-02-07 08:58:26	--	-
 2017-02-07 08:58:26	--	End of /MOTD command.
 2017-02-07 08:58:26	--	User mode [+i] by alex4_
+2017-02-07 09:08:41	--	irc: disconnected from server
+2017-02-07 09:40:21	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-07 09:41:21	=!=	irc: timeout
+2017-02-07 09:41:21	--	irc: reconnecting to server in 10 seconds
+2017-02-07 09:41:31	--	irc: reconnecting to server...
+2017-02-07 09:41:31	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-07 09:42:31	=!=	irc: timeout
+2017-02-07 09:42:31	--	irc: reconnecting to server in 20 seconds
+2017-02-07 09:42:51	--	irc: reconnecting to server...
+2017-02-07 09:42:51	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-07 09:43:51	=!=	irc: timeout
+2017-02-07 09:43:51	--	irc: reconnecting to server in 40 seconds
+2017-02-07 09:44:31	--	irc: reconnecting to server...
+2017-02-07 09:44:31	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-07 09:45:31	=!=	irc: timeout
+2017-02-07 09:45:31	--	irc: reconnecting to server in 1 minute, 20 seconds
+2017-02-07 09:46:51	--	irc: reconnecting to server...
+2017-02-07 09:46:51	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-07 09:47:51	=!=	irc: timeout
+2017-02-07 09:47:51	--	irc: reconnecting to server in 2 minutes, 40 seconds
+2017-02-07 09:47:52	--	irc: disconnected from server
+2017-02-07 09:54:04	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-07 09:54:04	--	irc: connected to chat.freenode.org/6667 (185.30.166.38)
+2017-02-07 09:54:04	--	orwell.freenode.net: *** Looking up your hostname...
+2017-02-07 09:54:04	--	orwell.freenode.net: *** Checking Ident
+2017-02-07 09:54:04	--	orwell.freenode.net: *** Found your hostname
+2017-02-07 09:54:11	--	orwell.freenode.net: *** No Ident response
+2017-02-07 09:54:11	--	irc: nickname "alex4" is already in use, trying nickname "alex4_"
+2017-02-07 09:54:11	--	Welcome to the freenode Internet Relay Chat Network alex4_
+2017-02-07 09:54:11	--	Your host is orwell.freenode.net[185.30.166.38/6667], running version ircd-seven-1.1.4
+2017-02-07 09:54:11	--	This server was created Sat Jan 7 2017 at 12:04:42 EST
+2017-02-07 09:54:11	--	orwell.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-02-07 09:54:11	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-02-07 09:54:11	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 KNOCK CPRIVMSG CNOTICE :are supported by this server
+2017-02-07 09:54:11	--	SAFELIST ELIST=CTU ETRACE WHOX :are supported by this server
+2017-02-07 09:54:11	--	There are 128 users and 90573 invisible on 27 servers
+2017-02-07 09:54:11	--	26 :IRC Operators online
+2017-02-07 09:54:11	--	11 :unknown connection(s)
+2017-02-07 09:54:11	--	57100 :channels formed
+2017-02-07 09:54:11	--	I have 4517 clients and 1 servers
+2017-02-07 09:54:11	--	4517 4715 :Current local users 4517, max 4715
+2017-02-07 09:54:11	--	90701 91092 :Current global users 90701, max 91092
+2017-02-07 09:54:11	--	Highest connection count: 4716 (4715 clients) (321462 connections received)
+2017-02-07 09:54:11	--	- orwell.freenode.net Message of the Day -
+2017-02-07 09:54:11	--	- Welcome to orwell.freenode.net in Amsterdam, NL.
+2017-02-07 09:54:11	--	- Thanks to http://www.hyperfilter.com/ for sponsoring
+2017-02-07 09:54:11	--	- this server!
+2017-02-07 09:54:11	--	-
+2017-02-07 09:54:11	--	- ORWELL, GEORGE [1903 - 1950] Born in India, his mother
+2017-02-07 09:54:11	--	- moved him to England when he was one year old, and it
+2017-02-07 09:54:11	--	- was in England where he was educated and spent most of
+2017-02-07 09:54:11	--	- his life.  Orwell is perhaps best known for his novels
+2017-02-07 09:54:11	--	- Nineteen Eighty-Four and Animal Farm.
+2017-02-07 09:54:11	--	-
+2017-02-07 09:54:11	--	-
+2017-02-07 09:54:11	--	- Welcome to freenode - supporting the free and open source
+2017-02-07 09:54:11	--	- software communities since 1998.
+2017-02-07 09:54:11	--	-
+2017-02-07 09:54:11	--	- By connecting to freenode you indicate that you have read and
+2017-02-07 09:54:12	--	- accept our policies as set out on http://www.freenode.net
+2017-02-07 09:54:12	--	- freenode runs an open proxy scanner. Please join #freenode for
+2017-02-07 09:54:12	--	- any network-related questions or queries, where a number of
+2017-02-07 09:54:12	--	- volunteer staff and helpful users will be happy to assist you.
+2017-02-07 09:54:12	--	-
+2017-02-07 09:54:12	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-02-07 09:54:12	--	- together with like-minded FOSS enthusiasts for talks and
+2017-02-07 09:54:12	--	- real-life collaboration.
+2017-02-07 09:54:12	--	-
+2017-02-07 09:54:12	--	- We would like to thank Private Internet Access
+2017-02-07 09:54:12	--	- (https://www.privateinternetaccess.com/) and the other
+2017-02-07 09:54:12	--	- organisations that help keep freenode and our other projects
+2017-02-07 09:54:12	--	- running for their sustained support.
+2017-02-07 09:54:12	--	-
+2017-02-07 09:54:12	--	- In particular we would like to thank the sponsor
+2017-02-07 09:54:12	--	- of this server, details of which can be found above.
+2017-02-07 09:54:12	--	-
+2017-02-07 09:54:12	--	End of /MOTD command.
+2017-02-07 09:54:12	--	User mode [+i] by alex4_
+2017-02-07 11:53:25	=!=	Closing Link: wlan-4-25.unl.edu (Ping timeout: 240 seconds)
+2017-02-07 11:53:25	--	irc: disconnected from server
+2017-02-07 11:53:25	--	irc: reconnecting to server in 10 seconds
+2017-02-07 11:53:35	--	irc: reconnecting to server...
+2017-02-07 11:53:35	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-07 11:53:36	--	irc: connected to chat.freenode.org/6667 (130.185.232.126)
+2017-02-07 11:53:36	--	hitchcock.freenode.net: *** Looking up your hostname...
+2017-02-07 11:53:36	--	hitchcock.freenode.net: *** Checking Ident
+2017-02-07 11:53:41	--	hitchcock.freenode.net: *** Found your hostname
+2017-02-07 11:53:43	--	hitchcock.freenode.net: *** No Ident response
+2017-02-07 11:53:43	--	Welcome to the freenode Internet Relay Chat Network alex4_
+2017-02-07 11:53:43	--	Your host is hitchcock.freenode.net[130.185.232.126/6667], running version ircd-seven-1.1.4
+2017-02-07 11:53:43	--	This server was created Tue Jan 10 2017 at 22:29:35 EET
+2017-02-07 11:53:43	--	hitchcock.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-02-07 11:53:43	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-02-07 11:53:43	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 WHOX SAFELIST ELIST=CTU :are supported by this server
+2017-02-07 11:53:43	--	ETRACE CPRIVMSG CNOTICE KNOCK :are supported by this server
+2017-02-07 11:53:43	--	There are 130 users and 89467 invisible on 27 servers
+2017-02-07 11:53:43	--	26 :IRC Operators online
+2017-02-07 11:53:43	--	16 :unknown connection(s)
+2017-02-07 11:53:43	--	57028 :channels formed
+2017-02-07 11:53:43	--	I have 4323 clients and 1 servers
+2017-02-07 11:53:43	--	4323 4398 :Current local users 4323, max 4398
+2017-02-07 11:53:43	--	89597 91093 :Current global users 89597, max 91093
+2017-02-07 11:53:43	--	Highest connection count: 4399 (4398 clients) (280772 connections received)
+2017-02-07 11:53:43	--	- hitchcock.freenode.net Message of the Day -
+2017-02-07 11:53:43	--	-
+2017-02-07 11:53:43	--	- Welcome to hitchcock.freenode.net in Sofia, Bulgaria, EU, kindly sponsored by
+2017-02-07 11:53:43	--	- Neterra Communications (www.neterra.net)
+2017-02-07 11:53:43	--	-
+2017-02-07 11:53:43	--	- HITCHCOCK, SIR ALFRED [1899 - 1980] Born in Essex,
+2017-02-07 11:53:43	--	- England, Sir Alfred Hitchcock was a noted film director
+2017-02-07 11:53:43	--	- and producer. Over a long career he pioneered many modern
+2017-02-07 11:53:43	--	- techniques in film-making, made more than 50 feature films,
+2017-02-07 11:53:43	--	- and influenced many present-day directors and producers.
+2017-02-07 11:53:43	--	-
+2017-02-07 11:53:43	--	- Welcome to freenode - supporting the free and open source
+2017-02-07 11:53:43	--	- software communities since 1998.
+2017-02-07 11:53:43	--	-
+2017-02-07 11:53:43	--	- By connecting to freenode you indicate that you have read and
+2017-02-07 11:53:43	--	- accept our policies as set out on http://www.freenode.net
+2017-02-07 11:53:43	--	- freenode runs an open proxy scanner. Please join #freenode for
+2017-02-07 11:53:43	--	- any network-related questions or queries, where a number of
+2017-02-07 11:53:43	--	- volunteer staff and helpful users will be happy to assist you.
+2017-02-07 11:53:43	--	-
+2017-02-07 11:53:43	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-02-07 11:53:43	--	- together with like-minded FOSS enthusiasts for talks and
+2017-02-07 11:53:43	--	- real-life collaboration.
+2017-02-07 11:53:43	--	-
+2017-02-07 11:53:43	--	- We would like to thank Private Internet Access
+2017-02-07 11:53:43	--	- (https://www.privateinternetaccess.com/) and the other
+2017-02-07 11:53:43	--	- organisations that help keep freenode and our other projects
+2017-02-07 11:53:43	--	- running for their sustained support.
+2017-02-07 11:53:43	--	-
+2017-02-07 11:53:43	--	- In particular we would like to thank the sponsor
+2017-02-07 11:53:43	--	- of this server, details of which can be found above.
+2017-02-07 11:53:43	--	-
+2017-02-07 11:53:43	--	End of /MOTD command.
+2017-02-07 11:53:43	--	User mode [+i] by alex4_
+2017-02-07 11:57:43	--	irc: disconnected from server
+2017-02-07 11:57:55	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-07 11:57:55	--	irc: connected to chat.freenode.org/6667 (164.132.77.237)
+2017-02-07 11:57:56	--	wilhelm.freenode.net: *** Looking up your hostname...
+2017-02-07 11:57:56	--	wilhelm.freenode.net: *** Checking Ident
+2017-02-07 11:57:56	--	wilhelm.freenode.net: *** Found your hostname
+2017-02-07 11:58:02	--	wilhelm.freenode.net: *** No Ident response
+2017-02-07 11:58:02	--	irc: nickname "alex4" is already in use, trying nickname "alex4_"
+2017-02-07 11:58:03	--	Welcome to the freenode Internet Relay Chat Network alex4_
+2017-02-07 11:58:03	--	Your host is wilhelm.freenode.net[164.132.77.237/6667], running version ircd-seven-1.1.4
+2017-02-07 11:58:03	--	This server was created Tue Jan 3 2017 at 16:20:15 CET
+2017-02-07 11:58:03	--	wilhelm.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-02-07 11:58:03	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-02-07 11:58:03	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 CPRIVMSG CNOTICE SAFELIST :are supported by this server
+2017-02-07 11:58:03	--	ELIST=CTU WHOX ETRACE KNOCK :are supported by this server
+2017-02-07 11:58:03	--	There are 130 users and 89447 invisible on 27 servers
+2017-02-07 11:58:03	--	26 :IRC Operators online
+2017-02-07 11:58:03	--	14 :unknown connection(s)
+2017-02-07 11:58:03	--	57022 :channels formed
+2017-02-07 11:58:03	--	I have 7443 clients and 1 servers
+2017-02-07 11:58:03	--	7443 10018 :Current local users 7443, max 10018
+2017-02-07 11:58:03	--	89577 90906 :Current global users 89577, max 90906
+2017-02-07 11:58:03	--	Highest connection count: 10019 (10018 clients) (877896 connections received)
+2017-02-07 11:58:03	--	- wilhelm.freenode.net Message of the Day -
+2017-02-07 11:58:03	--	- Welcome to wilhelm.freenode.net in Strasbourg, France.
+2017-02-07 11:58:03	--	- Thanks to http://digitaltreemedia.co.uk/ for sponsoring
+2017-02-07 11:58:03	--	- this server!
+2017-02-07 11:58:03	--	-
+2017-02-07 11:58:03	--	- Welcome to freenode - supporting the free and open source
+2017-02-07 11:58:03	--	- software communities since 1998.
+2017-02-07 11:58:03	--	-
+2017-02-07 11:58:03	--	- By connecting to freenode you indicate that you have read and
+2017-02-07 11:58:03	--	- accept our policies as set out on http://www.freenode.net
+2017-02-07 11:58:03	--	- freenode runs an open proxy scanner. Please join #freenode for
+2017-02-07 11:58:03	--	- any network-related questions or queries, where a number of
+2017-02-07 11:58:03	--	- volunteer staff and helpful users will be happy to assist you.
+2017-02-07 11:58:03	--	-
+2017-02-07 11:58:03	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-02-07 11:58:03	--	- together with like-minded FOSS enthusiasts for talks and
+2017-02-07 11:58:03	--	- real-life collaboration.
+2017-02-07 11:58:03	--	-
+2017-02-07 11:58:03	--	- We would like to thank Private Internet Access
+2017-02-07 11:58:03	--	- (https://www.privateinternetaccess.com/) and the other
+2017-02-07 11:58:03	--	- organisations that help keep freenode and our other projects
+2017-02-07 11:58:03	--	- running for their sustained support.
+2017-02-07 11:58:03	--	-
+2017-02-07 11:58:03	--	- In particular we would like to thank the sponsor
+2017-02-07 11:58:03	--	- of this server, details of which can be found above.
+2017-02-07 11:58:03	--	-
+2017-02-07 11:58:03	--	End of /MOTD command.
+2017-02-07 11:58:03	--	User mode [+i] by alex4_
+2017-02-07 14:04:28	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2017-02-07 14:04:28	--	irc: disconnecting from server...
+2017-02-07 14:04:28	--	irc: disconnected from server
+2017-02-07 14:04:28	--	irc: reconnecting to server in 10 seconds
+2017-02-07 14:04:38	--	irc: reconnecting to server...
+2017-02-07 14:04:38	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-07 14:04:38	--	irc: connected to chat.freenode.org/6667 (130.185.232.126)
+2017-02-07 14:04:38	--	hitchcock.freenode.net: *** Looking up your hostname...
+2017-02-07 14:04:38	--	hitchcock.freenode.net: *** Checking Ident
+2017-02-07 14:04:38	--	hitchcock.freenode.net: *** Found your hostname
+2017-02-07 14:04:48	--	hitchcock.freenode.net: *** No Ident response
+2017-02-07 14:04:48	--	Welcome to the freenode Internet Relay Chat Network alex4_
+2017-02-07 14:04:48	--	Your host is hitchcock.freenode.net[130.185.232.126/6667], running version ircd-seven-1.1.4
+2017-02-07 14:04:48	--	This server was created Tue Jan 10 2017 at 22:29:35 EET
+2017-02-07 14:04:48	--	hitchcock.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-02-07 14:04:48	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-02-07 14:04:48	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 WHOX SAFELIST ELIST=CTU :are supported by this server
+2017-02-07 14:04:48	--	ETRACE CPRIVMSG CNOTICE KNOCK :are supported by this server
+2017-02-07 14:04:48	--	There are 133 users and 89499 invisible on 28 servers
+2017-02-07 14:04:48	--	26 :IRC Operators online
+2017-02-07 14:04:48	--	12 :unknown connection(s)
+2017-02-07 14:04:48	--	57064 :channels formed
+2017-02-07 14:04:48	--	I have 4284 clients and 1 servers
+2017-02-07 14:04:48	--	4284 4398 :Current local users 4284, max 4398
+2017-02-07 14:04:48	--	89632 91093 :Current global users 89632, max 91093
+2017-02-07 14:04:48	--	Highest connection count: 4399 (4398 clients) (281952 connections received)
+2017-02-07 14:04:48	--	- hitchcock.freenode.net Message of the Day -
+2017-02-07 14:04:48	--	-
+2017-02-07 14:04:48	--	- Welcome to hitchcock.freenode.net in Sofia, Bulgaria, EU, kindly sponsored by
+2017-02-07 14:04:48	--	- Neterra Communications (www.neterra.net)
+2017-02-07 14:04:48	--	-
+2017-02-07 14:04:48	--	- HITCHCOCK, SIR ALFRED [1899 - 1980] Born in Essex,
+2017-02-07 14:04:48	--	- England, Sir Alfred Hitchcock was a noted film director
+2017-02-07 14:04:48	--	- and producer. Over a long career he pioneered many modern
+2017-02-07 14:04:48	--	- techniques in film-making, made more than 50 feature films,
+2017-02-07 14:04:48	--	- and influenced many present-day directors and producers.
+2017-02-07 14:04:48	--	-
+2017-02-07 14:04:48	--	- Welcome to freenode - supporting the free and open source
+2017-02-07 14:04:48	--	- software communities since 1998.
+2017-02-07 14:04:48	--	-
+2017-02-07 14:04:48	--	- By connecting to freenode you indicate that you have read and
+2017-02-07 14:04:48	--	- accept our policies as set out on http://www.freenode.net
+2017-02-07 14:04:48	--	- freenode runs an open proxy scanner. Please join #freenode for
+2017-02-07 14:04:48	--	- any network-related questions or queries, where a number of
+2017-02-07 14:04:48	--	- volunteer staff and helpful users will be happy to assist you.
+2017-02-07 14:04:48	--	-
+2017-02-07 14:04:48	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-02-07 14:04:48	--	- together with like-minded FOSS enthusiasts for talks and
+2017-02-07 14:04:48	--	- real-life collaboration.
+2017-02-07 14:04:48	--	-
+2017-02-07 14:04:48	--	- We would like to thank Private Internet Access
+2017-02-07 14:04:48	--	- (https://www.privateinternetaccess.com/) and the other
+2017-02-07 14:04:48	--	- organisations that help keep freenode and our other projects
+2017-02-07 14:04:48	--	- running for their sustained support.
+2017-02-07 14:04:48	--	-
+2017-02-07 14:04:48	--	- In particular we would like to thank the sponsor
+2017-02-07 14:04:48	--	- of this server, details of which can be found above.
+2017-02-07 14:04:48	--	-
+2017-02-07 14:04:48	--	End of /MOTD command.
+2017-02-07 14:04:48	--	User mode [+i] by alex4_
+2017-02-07 15:12:39	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2017-02-07 15:12:39	--	irc: disconnecting from server...
+2017-02-07 15:12:39	--	irc: disconnected from server
+2017-02-07 15:12:39	--	irc: reconnecting to server in 10 seconds
+2017-02-07 15:14:45	--	irc: reconnecting to server...
+2017-02-07 15:14:45	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-07 15:14:45	--	irc: connected to chat.freenode.org/6667 (195.154.200.232)
+2017-02-07 15:14:45	--	barjavel.freenode.net: *** Looking up your hostname...
+2017-02-07 15:14:45	--	barjavel.freenode.net: *** Checking Ident
+2017-02-07 15:14:45	--	barjavel.freenode.net: *** Found your hostname
+2017-02-07 15:14:55	--	barjavel.freenode.net: *** No Ident response
+2017-02-07 15:14:55	--	Welcome to the freenode Internet Relay Chat Network alex4_
+2017-02-07 15:14:55	--	Your host is barjavel.freenode.net[195.154.200.232/6667], running version ircd-seven-1.1.4
+2017-02-07 15:14:55	--	This server was created Sat Jan 7 2017 at 03:00:47 CET
+2017-02-07 15:14:55	--	barjavel.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-02-07 15:14:55	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-02-07 15:14:55	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 SAFELIST ELIST=CTU WHOX :are supported by this server
+2017-02-07 15:14:55	--	ETRACE CPRIVMSG CNOTICE KNOCK :are supported by this server
+2017-02-07 15:14:55	--	There are 135 users and 88785 invisible on 28 servers
+2017-02-07 15:14:55	--	26 :IRC Operators online
+2017-02-07 15:14:55	--	17 :unknown connection(s)
+2017-02-07 15:14:55	--	56993 :channels formed
+2017-02-07 15:14:55	--	I have 5473 clients and 1 servers
+2017-02-07 15:14:55	--	5473 5635 :Current local users 5473, max 5635
+2017-02-07 15:14:55	--	88920 91092 :Current global users 88920, max 91092
+2017-02-07 15:14:55	--	Highest connection count: 5636 (5635 clients) (364645 connections received)
+2017-02-07 15:14:55	--	- barjavel.freenode.net Message of the Day -
+2017-02-07 15:14:55	--	- Welcome to barjavel.freenode.net in Paris, FR, EU.
+2017-02-07 15:14:55	--	- Thanks to Bearstech (www.bearstech.com) for sponsoring
+2017-02-07 15:14:55	--	- this server!
+2017-02-07 15:14:55	--	-
+2017-02-07 15:14:55	--	- BARJAVEL, RENE [1911-1985].  Born in Nyons, he was a
+2017-02-07 15:14:55	--	- science-fiction author, a journalist and a critic. He is
+2017-02-07 15:14:55	--	- credited with having written the first novel to introduce
+2017-02-07 15:14:55	--	- the Grandfather Paradox in time travel, in his 1943 work
+2017-02-07 15:14:55	--	- 'Le Voyageur imprudent'.
+2017-02-07 15:14:55	--	-
+2017-02-07 15:14:55	--	- Welcome to freenode - supporting the free and open source
+2017-02-07 15:14:55	--	- software communities since 1998.
+2017-02-07 15:14:55	--	-
+2017-02-07 15:14:55	--	- By connecting to freenode you indicate that you have read and
+2017-02-07 15:14:55	--	- accept our policies as set out on http://www.freenode.net
+2017-02-07 15:14:55	--	- freenode runs an open proxy scanner. Please join #freenode for
+2017-02-07 15:14:55	--	- any network-related questions or queries, where a number of
+2017-02-07 15:14:55	--	- volunteer staff and helpful users will be happy to assist you.
+2017-02-07 15:14:55	--	-
+2017-02-07 15:14:55	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-02-07 15:14:55	--	- together with like-minded FOSS enthusiasts for talks and
+2017-02-07 15:14:55	--	- real-life collaboration.
+2017-02-07 15:14:55	--	-
+2017-02-07 15:14:55	--	- We would like to thank Private Internet Access
+2017-02-07 15:14:55	--	- (https://www.privateinternetaccess.com/) and the other
+2017-02-07 15:14:55	--	- organisations that help keep freenode and our other projects
+2017-02-07 15:14:55	--	- running for their sustained support.
+2017-02-07 15:14:55	--	-
+2017-02-07 15:14:55	--	- In particular we would like to thank the sponsor
+2017-02-07 15:14:55	--	- of this server, details of which can be found above.
+2017-02-07 15:14:55	--	-
+2017-02-07 15:14:55	--	End of /MOTD command.
+2017-02-07 15:14:55	--	User mode [+i] by alex4_
+2017-02-07 17:03:07	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2017-02-07 17:03:07	--	irc: disconnecting from server...
+2017-02-07 17:03:07	--	irc: disconnected from server
+2017-02-07 17:03:07	--	irc: reconnecting to server in 10 seconds
+2017-02-07 17:03:17	--	irc: reconnecting to server...
+2017-02-07 17:03:17	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-07 17:03:17	--	irc: connected to chat.freenode.org/6667 (130.185.232.126)
+2017-02-07 17:03:17	--	hitchcock.freenode.net: *** Looking up your hostname...
+2017-02-07 17:03:17	--	hitchcock.freenode.net: *** Checking Ident
+2017-02-07 17:03:18	--	hitchcock.freenode.net: *** Found your hostname
+2017-02-07 17:03:26	--	hitchcock.freenode.net: *** No Ident response
+2017-02-07 17:03:26	--	Welcome to the freenode Internet Relay Chat Network alex4_
+2017-02-07 17:03:26	--	Your host is hitchcock.freenode.net[130.185.232.126/6667], running version ircd-seven-1.1.4
+2017-02-07 17:03:26	--	This server was created Tue Jan 10 2017 at 22:29:35 EET
+2017-02-07 17:03:26	--	hitchcock.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-02-07 17:03:26	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-02-07 17:03:26	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 WHOX SAFELIST ELIST=CTU :are supported by this server
+2017-02-07 17:03:26	--	ETRACE CPRIVMSG CNOTICE KNOCK :are supported by this server
+2017-02-07 17:03:26	--	There are 133 users and 86153 invisible on 28 servers
+2017-02-07 17:03:26	--	26 :IRC Operators online
+2017-02-07 17:03:26	--	9 :unknown connection(s)
+2017-02-07 17:03:26	--	56766 :channels formed
+2017-02-07 17:03:26	--	I have 4118 clients and 1 servers
+2017-02-07 17:03:26	--	4118 4398 :Current local users 4118, max 4398
+2017-02-07 17:03:26	--	86286 91093 :Current global users 86286, max 91093
+2017-02-07 17:03:26	--	Highest connection count: 4399 (4398 clients) (283151 connections received)
+2017-02-07 17:03:26	--	- hitchcock.freenode.net Message of the Day -
+2017-02-07 17:03:26	--	-
+2017-02-07 17:03:26	--	- Welcome to hitchcock.freenode.net in Sofia, Bulgaria, EU, kindly sponsored by
+2017-02-07 17:03:26	--	- Neterra Communications (www.neterra.net)
+2017-02-07 17:03:26	--	-
+2017-02-07 17:03:26	--	- HITCHCOCK, SIR ALFRED [1899 - 1980] Born in Essex,
+2017-02-07 17:03:26	--	- England, Sir Alfred Hitchcock was a noted film director
+2017-02-07 17:03:26	--	- and producer. Over a long career he pioneered many modern
+2017-02-07 17:03:26	--	- techniques in film-making, made more than 50 feature films,
+2017-02-07 17:03:26	--	- and influenced many present-day directors and producers.
+2017-02-07 17:03:26	--	-
+2017-02-07 17:03:26	--	- Welcome to freenode - supporting the free and open source
+2017-02-07 17:03:26	--	- software communities since 1998.
+2017-02-07 17:03:26	--	-
+2017-02-07 17:03:26	--	- By connecting to freenode you indicate that you have read and
+2017-02-07 17:03:26	--	- accept our policies as set out on http://www.freenode.net
+2017-02-07 17:03:26	--	- freenode runs an open proxy scanner. Please join #freenode for
+2017-02-07 17:03:26	--	- any network-related questions or queries, where a number of
+2017-02-07 17:03:26	--	- volunteer staff and helpful users will be happy to assist you.
+2017-02-07 17:03:26	--	-
+2017-02-07 17:03:26	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-02-07 17:03:26	--	- together with like-minded FOSS enthusiasts for talks and
+2017-02-07 17:03:26	--	- real-life collaboration.
+2017-02-07 17:03:26	--	-
+2017-02-07 17:03:26	--	- We would like to thank Private Internet Access
+2017-02-07 17:03:26	--	- (https://www.privateinternetaccess.com/) and the other
+2017-02-07 17:03:26	--	- organisations that help keep freenode and our other projects
+2017-02-07 17:03:26	--	- running for their sustained support.
+2017-02-07 17:03:26	--	-
+2017-02-07 17:03:26	--	- In particular we would like to thank the sponsor
+2017-02-07 17:03:26	--	- of this server, details of which can be found above.
+2017-02-07 17:03:26	--	-
+2017-02-07 17:03:26	--	End of /MOTD command.
+2017-02-07 17:03:26	--	User mode [+i] by alex4_
+2017-02-07 17:13:06	=!=	irc: reading data on socket: error 104 Connection reset by peer
+2017-02-07 17:13:06	--	irc: disconnecting from server...
+2017-02-07 17:13:06	--	irc: disconnected from server
+2017-02-07 17:13:06	--	irc: reconnecting to server in 10 seconds
+2017-02-07 17:13:16	--	irc: reconnecting to server...
+2017-02-07 17:13:16	--	irc: connecting to server chat.freenode.org/6667...
+2017-02-07 17:13:16	--	irc: connected to chat.freenode.org/6667 (185.30.166.38)
+2017-02-07 17:13:16	--	orwell.freenode.net: *** Looking up your hostname...
+2017-02-07 17:13:17	--	orwell.freenode.net: *** Checking Ident
+2017-02-07 17:13:17	--	orwell.freenode.net: *** Found your hostname
+2017-02-07 17:13:24	--	orwell.freenode.net: *** No Ident response
+2017-02-07 17:13:24	--	Welcome to the freenode Internet Relay Chat Network alex4_
+2017-02-07 17:13:24	--	Your host is orwell.freenode.net[185.30.166.38/6667], running version ircd-seven-1.1.4
+2017-02-07 17:13:24	--	This server was created Sat Jan 7 2017 at 12:04:42 EST
+2017-02-07 17:13:24	--	orwell.freenode.net ircd-seven-1.1.4 DOQRSZaghilopswz CFILMPQSbcefgijklmnopqrstvz bkloveqjfI
+2017-02-07 17:13:24	--	CHANTYPES=# EXCEPTS INVEX CHANMODES=eIbq,k,flj,CFLMPQScgimnprstz CHANLIMIT=#:120 PREFIX=(ov)@+ MAXLIST=bqeI:100 MODES=4 NETWORK=freenode STATUSMSG=@+ CALLERID=g CASEMAPPING=rfc1459 :are supported by this server
+2017-02-07 17:13:24	--	CHARSET=ascii NICKLEN=16 CHANNELLEN=50 TOPICLEN=390 DEAF=D FNC TARGMAX=NAMES:1,LIST:1,KICK:1,WHOIS:1,PRIVMSG:4,NOTICE:4,ACCEPT:,MONITOR: EXTBAN=$,ajrxz CLIENTVER=3.0 KNOCK CPRIVMSG CNOTICE :are supported by this server
+2017-02-07 17:13:24	--	SAFELIST ELIST=CTU ETRACE WHOX :are supported by this server
+2017-02-07 17:13:24	--	There are 131 users and 85840 invisible on 28 servers
+2017-02-07 17:13:24	--	26 :IRC Operators online
+2017-02-07 17:13:24	--	4 :unknown connection(s)
+2017-02-07 17:13:24	--	56734 :channels formed
+2017-02-07 17:13:24	--	I have 4305 clients and 1 servers
+2017-02-07 17:13:24	--	4305 4715 :Current local users 4305, max 4715
+2017-02-07 17:13:24	--	85971 91092 :Current global users 85971, max 91092
+2017-02-07 17:13:24	--	Highest connection count: 4716 (4715 clients) (324841 connections received)
+2017-02-07 17:13:24	--	- orwell.freenode.net Message of the Day -
+2017-02-07 17:13:24	--	- Welcome to orwell.freenode.net in Amsterdam, NL.
+2017-02-07 17:13:24	--	- Thanks to http://www.hyperfilter.com/ for sponsoring
+2017-02-07 17:13:24	--	- this server!
+2017-02-07 17:13:24	--	-
+2017-02-07 17:13:24	--	- ORWELL, GEORGE [1903 - 1950] Born in India, his mother
+2017-02-07 17:13:24	--	- moved him to England when he was one year old, and it
+2017-02-07 17:13:24	--	- was in England where he was educated and spent most of
+2017-02-07 17:13:24	--	- his life.  Orwell is perhaps best known for his novels
+2017-02-07 17:13:24	--	- Nineteen Eighty-Four and Animal Farm.
+2017-02-07 17:13:24	--	-
+2017-02-07 17:13:24	--	-
+2017-02-07 17:13:24	--	- Welcome to freenode - supporting the free and open source
+2017-02-07 17:13:24	--	- software communities since 1998.
+2017-02-07 17:13:24	--	-
+2017-02-07 17:13:24	--	- By connecting to freenode you indicate that you have read and
+2017-02-07 17:13:24	--	- accept our policies as set out on http://www.freenode.net
+2017-02-07 17:13:24	--	- freenode runs an open proxy scanner. Please join #freenode for
+2017-02-07 17:13:24	--	- any network-related questions or queries, where a number of
+2017-02-07 17:13:24	--	- volunteer staff and helpful users will be happy to assist you.
+2017-02-07 17:13:24	--	-
+2017-02-07 17:13:24	--	- You can meet us at FOSSCON (http://www.fosscon.org) where we get
+2017-02-07 17:13:24	--	- together with like-minded FOSS enthusiasts for talks and
+2017-02-07 17:13:24	--	- real-life collaboration.
+2017-02-07 17:13:24	--	-
+2017-02-07 17:13:24	--	- We would like to thank Private Internet Access
+2017-02-07 17:13:24	--	- (https://www.privateinternetaccess.com/) and the other
+2017-02-07 17:13:24	--	- organisations that help keep freenode and our other projects
+2017-02-07 17:13:24	--	- running for their sustained support.
+2017-02-07 17:13:24	--	-
+2017-02-07 17:13:24	--	- In particular we would like to thank the sponsor
+2017-02-07 17:13:24	--	- of this server, details of which can be found above.
+2017-02-07 17:13:24	--	-
+2017-02-07 17:13:24	--	End of /MOTD command.
+2017-02-07 17:13:25	--	User mode [+i] by alex4_

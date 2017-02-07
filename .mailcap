@@ -25,8 +25,8 @@
 # Feh is a simple and effective image viewer
 # Note that rtv returns a list of urls for imgur albums, so we don't put quotes
 # around the `%s`
-image/x-imgur-album; feh -B black -Z '%s'; test=test -n "$DISPLAY"
-image/*; feh -B black -Z '%s'; test=test -n "$DISPLAY"
+image/x-imgur-album; feh -B black '%s'; test=test -n "$DISPLAY"
+image/*; feh -B black '%s'; test=test -n "$DISPLAY"
 
 # Youtube videos are assigned a custom mime-type, which can be streamed with
 # vlc or youtube-dl.

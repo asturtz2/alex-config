@@ -333,3 +333,57 @@
 2017-01-29 02:08:16	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
 2017-01-29 02:13:14	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 258 seconds)
 2017-01-29 02:27:25	--	irc: disconnected from server
+2017-02-07 01:51:09	-->	alex4_ (~alex@cpe-97-98-226-199.neb.res.rr.com) has joined #xmonad
+2017-02-07 01:51:10	--	Topic for #xmonad is "xmonad: the tiling window manager with formally proven extensions | xmonad 0.12 released! | http://xmonad.org | http://xmonad.org/faq | cheatsheet: http://bit.ly/gz1R4"
+2017-02-07 01:51:10	--	Topic set by enthropy (~aavogt@d157-103-21.home4.cgocable.net) on Tue, 22 Dec 2015 16:04:55
+2017-02-07 01:51:10	--	Channel #xmonad: 192 nicks (0 ops, 1 voice, 191 normals)
+2017-02-07 01:51:10	--	URL for #xmonad: http://xmonad.org
+2017-02-07 01:51:10	--	Channel created on Tue, 24 Apr 2007 23:33:15
+2017-02-07 01:54:07	<--	thunderrd__ (~thunderrd@110.78.178.163) has quit (Quit: Leaving)
+2017-02-07 01:55:09	-->	thunderrd (~thunderrd@110.78.178.163) has joined #xmonad
+2017-02-07 01:57:04	-->	anton___ (~patrick@174-193-190-90.dyn.estpak.ee) has joined #xmonad
+2017-02-07 01:58:06	<--	papey_lap (~papey@18-250-190-109.dsl.ovh.fr) has quit (Quit: WeeChat 1.7)
+2017-02-07 02:01:07	-->	papey_lap (~papey@18-250-190-109.dsl.ovh.fr) has joined #xmonad
+2017-02-07 02:02:24	-->	jagob (~jacob@h229.natout.aau.dk) has joined #xmonad
+2017-02-07 02:05:08	-->	day|flip (~days@c-67-190-61-238.hsd1.co.comcast.net) has joined #xmonad
+2017-02-07 02:12:26	-->	mmarconm (~user@179.254.177.198) has joined #xmonad
+2017-02-07 02:12:31	day|flip	mpv streaming. setting mpv window without borders. as it buffering. My screen tend to flicker a lot. hell. even after it done done. thing like my web browser (qutebrowser) will also flicker. this only happen when mpv is up. does not happen when mpv have a window border around it. but i want it without borders
+2017-02-07 02:12:32	-->	jan-sipr (~quassel@147.229.63.131) has joined #xmonad
+2017-02-07 02:12:56	day|flip	after it done buffering*
+2017-02-07 02:13:40	-->	kelnoky (~shao@ip1f106213.dynamic.kabel-deutschland.de) has joined #xmonad
+2017-02-07 02:16:57	day|flip	https://ghostbin.com/paste/3uhmj
+2017-02-07 02:22:39	<--	day|flip (~days@c-67-190-61-238.hsd1.co.comcast.net) has quit (Remote host closed the connection)
+2017-02-07 02:23:04	-->	BartAdv (uid90451@gateway/web/irccloud.com/x-nvbqakhybsyvvbma) has joined #xmonad
+2017-02-07 02:24:59	-->	target_i (~target_i@93.190.182.16) has joined #xmonad
+2017-02-07 02:28:08	<--	jan-sipr (~quassel@147.229.63.131) has quit (Ping timeout: 255 seconds)
+2017-02-07 02:28:18	-->	jan-sipr (~quassel@2001:67c:1220:98a0:8fe4:a3f0:c997:a8ee) has joined #xmonad
+2017-02-07 02:39:11	<--	jan-sipr (~quassel@2001:67c:1220:98a0:8fe4:a3f0:c997:a8ee) has quit (Ping timeout: 240 seconds)
+2017-02-07 02:40:01	<--	overlord_tm (~andraz@213.172.234.141) has quit (Ping timeout: 248 seconds)
+2017-02-07 02:40:31	-->	jan-sipr (~quassel@2001:67c:1220:98a0:8fe4:a3f0:c997:a8ee) has joined #xmonad
+2017-02-07 02:42:06	-->	stepnem (~stepnem@185.112.167.114) has joined #xmonad
+2017-02-07 02:50:44	<--	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has quit (Remote host closed the connection)
+2017-02-07 02:55:32	-->	mitz (~mitz@KD106167040033.ppp-bb.dion.ne.jp) has joined #xmonad
+2017-02-07 02:57:56	-->	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has joined #xmonad
+2017-02-07 02:57:56	<--	jeapostrophe (~jay@pool-98-118-113-97.bstnma.fios.verizon.net) has quit (Changing host)
+2017-02-07 02:57:56	-->	jeapostrophe (~jay@racket/jeapostrophe) has joined #xmonad
+2017-02-07 02:58:19	<--	defragger (~FatFreddy@unaffiliated/defragger) has quit (Quit: leaving)
+2017-02-07 02:59:47	<--	mendez (~mendez@electricabac.us) has quit (Ping timeout: 255 seconds)
+2017-02-07 03:00:23	-->	defragger (~defragger@unaffiliated/defragger) has joined #xmonad
+2017-02-07 03:00:48	-->	mendez (~mendez@electricabac.us) has joined #xmonad
+2017-02-07 03:03:15	<--	jeapostrophe (~jay@racket/jeapostrophe) has quit (Ping timeout: 245 seconds)
+2017-02-07 03:10:34	-->	overlord_tm (~andraz@5-255-217-91.xlab.si) has joined #xmonad
+2017-02-07 03:28:45	--	irc: disconnected from server
+2017-02-07 03:29:18	-->	alex4 (~alex@cpe-97-98-226-199.neb.res.rr.com) has joined #xmonad
+2017-02-07 03:29:18	--	Topic for #xmonad is "xmonad: the tiling window manager with formally proven extensions | xmonad 0.12 released! | http://xmonad.org | http://xmonad.org/faq | cheatsheet: http://bit.ly/gz1R4"
+2017-02-07 03:29:18	--	Topic set by enthropy (~aavogt@d157-103-21.home4.cgocable.net) on Tue, 22 Dec 2015 16:04:55
+2017-02-07 03:29:19	--	Channel #xmonad: 200 nicks (0 ops, 1 voice, 199 normals)
+2017-02-07 03:29:19	--	URL for #xmonad: http://xmonad.org
+2017-02-07 03:29:19	--	Channel created on Tue, 24 Apr 2007 23:33:15
+2017-02-07 03:31:49	-->	day|flip (~days@c-67-190-61-238.hsd1.co.comcast.net) has joined #xmonad
+2017-02-07 03:41:43	--	irc: disconnected from server
+2017-02-07 08:58:45	-->	alex4_ (~alex@cpe-97-98-226-199.neb.res.rr.com) has joined #xmonad
+2017-02-07 08:58:45	--	Topic for #xmonad is "xmonad: the tiling window manager with formally proven extensions | xmonad 0.12 released! | http://xmonad.org | http://xmonad.org/faq | cheatsheet: http://bit.ly/gz1R4"
+2017-02-07 08:58:45	--	Topic set by enthropy (~aavogt@d157-103-21.home4.cgocable.net) on Tue, 22 Dec 2015 16:04:55
+2017-02-07 08:58:45	--	Channel #xmonad: 200 nicks (0 ops, 1 voice, 199 normals)
+2017-02-07 08:58:45	--	URL for #xmonad: http://xmonad.org
+2017-02-07 08:58:48	--	Channel created on Tue, 24 Apr 2007 23:33:15

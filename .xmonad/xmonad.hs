@@ -5,6 +5,7 @@ import XMonad
 import XMonad.Hooks.DynamicLog
 import XMonad.Hooks.ManageDocks
 
+import XMonad.Layout.SimplestFloat
 import XMonad.Layout.Spacing
 import XMonad.Layout.EqualSpacing
 import XMonad.Layout.MultiToggle
@@ -18,7 +19,8 @@ import XMonad.Actions.WindowGo
 main = do
     xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmobarrc"
     xmonad $ defaultConfig
-        { manageHook         = manageHook'
+        { startupHook        = startup
+        , manageHook         = manageHook'
         , layoutHook         = layout
         , logHook            = logHook' xmproc
         , borderWidth        = borderWidth'
@@ -31,20 +33,26 @@ main = do
         , zathura
         , rtv
         , vim
+        , ranger
+        , weechat
         ]
 
 -- Basic configs
 borderWidth' = 1
-terminal' = "xfce4-terminal"
+terminal' = "urxvt"
 normalBorderColor' = "#cccccc"
 focusedBorderColor' = "#8A745E"
+
+startup :: X ()
+startup = do
+    spawn "wal -i '$(< '${HOME}/.cache/wal/wal')'"
 
 -- Layouts
 layout = id
     . equalSpacing gapWidth gapShrink mult minWidth
     . avoidStruts
     . mkToggle (single FULL) 
-    $ tiled ||| Mirror tiled
+    $ tiled ||| Mirror tiled ||| simplestFloat
   where
     gapWidth  = 15
     gapShrink = 0
@@ -57,7 +65,6 @@ layout = id
 
 -- Hooks
 manageHook' = manageDocks <+> manageHook defaultConfig
-layoutHook' = equalSpacing 15 0 0 1 . avoidStruts $ layout
 logHook' xmproc = dynamicLogWithPP xmobarPP
     { ppOutput = hPutStrLn xmproc
     , ppTitle  = xmobarColor "brown" "" . shorten 50
@@ -65,8 +72,12 @@ logHook' xmproc = dynamicLogWithPP xmobarPP
 
 -- Keymappings
 -- Should be of type XConfig a -> [((ButtonMask, KeySym), X ())] -> XConfig a 
-firefox = ((mod1Mask .|. shiftMask, xK_f), spawn "firefox")
+-- keybind :: XConfig a -> [((ButtonMask, KeySym), X ())] -> XConfig a
+
+firefox = ((mod1Mask .|. shiftMask, xK_b), spawn "firefox")
 zathura = ((mod1Mask .|. shiftMask, xK_z), spawn "zathura")
-rtv     = ((mod1Mask .|. shiftMask, xK_r), runInTerm """bash -c 'source ~/.bashrc; rtv'")
+rtv     = ((mod1Mask .|. shiftMask, xK_r), runInTerm "" "rtv")
 vim     = ((mod1Mask .|. shiftMask, xK_v), runInTerm "" "nvim")
+ranger  = ((mod1Mask .|. shiftMask, xK_t), runInTerm "" "env EDITOR=nvim ranger")
+weechat = ((mod1Mask .|. shiftMask, xK_m), runInTerm "" "weechat")
 toggleFullScreen = ((mod1Mask, xK_f), sendMessage $ Toggle FULL)

@@ -61,9 +61,9 @@ set completeopt-="preview"
 let loaded_netrwPlugin=1
 " }}}
 
-" NERDTree {{{
-map <Leader>t :NERDTreeToggle<CR>
-map <Leader>T :NERDTree %<CR>
+" Ranger {{{
+let g:ranger_map_keys = 0
+map <Leader>t :Ranger<CR>
 " }}}
 
 " CtrlP {{{
@@ -88,16 +88,16 @@ let g:syntastic_cs_checkers=['syntax', 'semantic', 'issues']
 " }}}
 
 " Fugitive {{{
-map <Leader>gs :GStatus<CR>
-map <Leader>gc :GCommit -m
-map <Leader>gm :GMerge
-map <Leader>gpl :GPull
-map <Leader>gps :GPush
-map <Leader>gf :GFetch
-map <Leader>gg :GGrep
-map <Leader>gl :GLog
-map <Leader>gd :GDiff
-map <Leader>gb :GBlame
+map <Leader>gs :Gstatus<CR>
+map <Leader>gc :Gcommit -m
+map <Leader>gm :Gmerge
+map <Leader>gpl :Gpull
+map <Leader>gps :Gpush
+map <Leader>gf :Gfetch
+map <Leader>gg :Ggrep
+map <Leader>gl :Glog
+map <Leader>gd :Gdiff
+map <Leader>gb :Gblame
 " }}}
 
 " Gundo {{{
@@ -110,7 +110,7 @@ call plug#begin()
 " Core {{{
 Plug 'ctrlpvim/ctrlp.vim', { 'on' : ['CtrlP', 'CtrlPBuffer', 'CtrlPMRU'] }
 Plug 'scrooloose/nerdtree', { 'on' : 'NERDTreeToggle' }
-Plug 'tpope/vim-fugitive', { 'on' : ['GStatus', 'GBlame', 'GLog', 'GDiff'] }
+Plug 'tpope/vim-fugitive', { 'on' : ['Gstatus', 'Gblame', 'Glog', 'Gdiff'] }
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
 Plug 'tpope/vim-commentary'
@@ -120,6 +120,8 @@ Plug 'tpope/vim-unimpaired'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-abolish'
 Plug 'tpope/vim-sleuth'
+Plug 'francoiscabrol/ranger.vim'
+Plug 'rbgrouleff/bclose.vim'
 Plug 'sjl/gundo.vim', { 'on' : 'GundoToggle' }
 Plug 'dylanaraps/wal'
 Plug 'vim-airline/vim-airline'
@@ -130,7 +132,7 @@ Plug 'airblade/vim-gitgutter'
 " }}}
 
 " Haskell {{{
-Plug 'itchyny/vim-haskell-indent', { 'for' : 'haskell' }
+Plug 'itchyny/vim-haskell-indent'
 " }}}
 
 " C# {{{

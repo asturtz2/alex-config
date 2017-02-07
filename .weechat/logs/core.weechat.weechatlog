@@ -507,3 +507,311 @@
 2017-02-02 13:42:57		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
 2017-02-02 13:43:57	=!=	python: function "quit_notification_cb" must return a valid value
 2017-02-02 13:43:57	=!=	python: error in function "quit_notification_cb"
+2017-02-07 01:50:54		slack: DEBUG: Loading messages from cache.
+2017-02-07 01:50:54		slack: DEBUG: Completed loading messages from cache.
+2017-02-07 01:50:54		python scripts loaded: slack_extension
+2017-02-07 01:50:54		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-02-07 01:50:54		!! slack.com login error: invalid_auth
+2017-02-07 01:50:54		 The problematic token starts with INSERT VAL
+2017-02-07 01:50:54		 Please check your API token with
+2017-02-07 01:50:54		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 01:53:00		!! slack.com login error: invalid_auth
+2017-02-07 01:53:00		 The problematic token starts with INSERT VAL
+2017-02-07 01:53:00		 Please check your API token with
+2017-02-07 01:53:00		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 01:55:06		!! slack.com login error: invalid_auth
+2017-02-07 01:55:06		 The problematic token starts with INSERT VAL
+2017-02-07 01:55:06		 Please check your API token with
+2017-02-07 01:55:06		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 01:57:12		!! slack.com login error: invalid_auth
+2017-02-07 01:57:12		 The problematic token starts with INSERT VAL
+2017-02-07 01:57:12		 Please check your API token with
+2017-02-07 01:57:12		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 01:59:18		!! slack.com login error: invalid_auth
+2017-02-07 01:59:18		 The problematic token starts with INSERT VAL
+2017-02-07 01:59:18		 Please check your API token with
+2017-02-07 01:59:18		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:01:24		!! slack.com login error: invalid_auth
+2017-02-07 02:01:24		 The problematic token starts with INSERT VAL
+2017-02-07 02:01:24		 Please check your API token with
+2017-02-07 02:01:24		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:03:30		!! slack.com login error: invalid_auth
+2017-02-07 02:03:30		 The problematic token starts with INSERT VAL
+2017-02-07 02:03:30		 Please check your API token with
+2017-02-07 02:03:30		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:05:36		!! slack.com login error: invalid_auth
+2017-02-07 02:05:36		 The problematic token starts with INSERT VAL
+2017-02-07 02:05:36		 Please check your API token with
+2017-02-07 02:05:36		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:07:42		!! slack.com login error: invalid_auth
+2017-02-07 02:07:42		 The problematic token starts with INSERT VAL
+2017-02-07 02:07:42		 Please check your API token with
+2017-02-07 02:07:42		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:09:48		!! slack.com login error: invalid_auth
+2017-02-07 02:09:48		 The problematic token starts with INSERT VAL
+2017-02-07 02:09:48		 Please check your API token with
+2017-02-07 02:09:48		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:11:54		!! slack.com login error: invalid_auth
+2017-02-07 02:11:54		 The problematic token starts with INSERT VAL
+2017-02-07 02:11:54		 Please check your API token with
+2017-02-07 02:11:54		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:14:00		!! slack.com login error: invalid_auth
+2017-02-07 02:14:00		 The problematic token starts with INSERT VAL
+2017-02-07 02:14:00		 Please check your API token with
+2017-02-07 02:14:00		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:16:06		!! slack.com login error: invalid_auth
+2017-02-07 02:16:06		 The problematic token starts with INSERT VAL
+2017-02-07 02:16:06		 Please check your API token with
+2017-02-07 02:16:06		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:18:12		!! slack.com login error: invalid_auth
+2017-02-07 02:18:12		 The problematic token starts with INSERT VAL
+2017-02-07 02:18:12		 Please check your API token with
+2017-02-07 02:18:12		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:20:18		!! slack.com login error: invalid_auth
+2017-02-07 02:20:18		 The problematic token starts with INSERT VAL
+2017-02-07 02:20:18		 Please check your API token with
+2017-02-07 02:20:18		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:22:24		!! slack.com login error: invalid_auth
+2017-02-07 02:22:24		 The problematic token starts with INSERT VAL
+2017-02-07 02:22:24		 Please check your API token with
+2017-02-07 02:22:24		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:24:30		!! slack.com login error: invalid_auth
+2017-02-07 02:24:30		 The problematic token starts with INSERT VAL
+2017-02-07 02:24:30		 Please check your API token with
+2017-02-07 02:24:30		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:26:36		!! slack.com login error: invalid_auth
+2017-02-07 02:26:36		 The problematic token starts with INSERT VAL
+2017-02-07 02:26:36		 Please check your API token with
+2017-02-07 02:26:36		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:28:42		!! slack.com login error: invalid_auth
+2017-02-07 02:28:42		 The problematic token starts with INSERT VAL
+2017-02-07 02:28:42		 Please check your API token with
+2017-02-07 02:28:42		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:30:48		!! slack.com login error: invalid_auth
+2017-02-07 02:30:48		 The problematic token starts with INSERT VAL
+2017-02-07 02:30:48		 Please check your API token with
+2017-02-07 02:30:48		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:32:54		!! slack.com login error: invalid_auth
+2017-02-07 02:32:54		 The problematic token starts with INSERT VAL
+2017-02-07 02:32:54		 Please check your API token with
+2017-02-07 02:32:54		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:35:00		!! slack.com login error: invalid_auth
+2017-02-07 02:35:00		 The problematic token starts with INSERT VAL
+2017-02-07 02:35:00		 Please check your API token with
+2017-02-07 02:35:00		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:37:06		!! slack.com login error: invalid_auth
+2017-02-07 02:37:06		 The problematic token starts with INSERT VAL
+2017-02-07 02:37:06		 Please check your API token with
+2017-02-07 02:37:06		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:39:12		!! slack.com login error: invalid_auth
+2017-02-07 02:39:12		 The problematic token starts with INSERT VAL
+2017-02-07 02:39:12		 Please check your API token with
+2017-02-07 02:39:12		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:41:18		!! slack.com login error: invalid_auth
+2017-02-07 02:41:18		 The problematic token starts with INSERT VAL
+2017-02-07 02:41:18		 Please check your API token with
+2017-02-07 02:41:18		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:43:24		!! slack.com login error: invalid_auth
+2017-02-07 02:43:24		 The problematic token starts with INSERT VAL
+2017-02-07 02:43:24		 Please check your API token with
+2017-02-07 02:43:24		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:45:30		!! slack.com login error: invalid_auth
+2017-02-07 02:45:30		 The problematic token starts with INSERT VAL
+2017-02-07 02:45:30		 Please check your API token with
+2017-02-07 02:45:30		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:47:36		!! slack.com login error: invalid_auth
+2017-02-07 02:47:36		 The problematic token starts with INSERT VAL
+2017-02-07 02:47:36		 Please check your API token with
+2017-02-07 02:47:36		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:49:42		!! slack.com login error: invalid_auth
+2017-02-07 02:49:42		 The problematic token starts with INSERT VAL
+2017-02-07 02:49:42		 Please check your API token with
+2017-02-07 02:49:42		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:51:48		!! slack.com login error: invalid_auth
+2017-02-07 02:51:48		 The problematic token starts with INSERT VAL
+2017-02-07 02:51:48		 Please check your API token with
+2017-02-07 02:51:48		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:53:54		!! slack.com login error: invalid_auth
+2017-02-07 02:53:54		 The problematic token starts with INSERT VAL
+2017-02-07 02:53:54		 Please check your API token with
+2017-02-07 02:53:54		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:56:00		!! slack.com login error: invalid_auth
+2017-02-07 02:56:00		 The problematic token starts with INSERT VAL
+2017-02-07 02:56:00		 Please check your API token with
+2017-02-07 02:56:00		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 02:58:06		!! slack.com login error: invalid_auth
+2017-02-07 02:58:06		 The problematic token starts with INSERT VAL
+2017-02-07 02:58:06		 Please check your API token with
+2017-02-07 02:58:06		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:00:12		!! slack.com login error: invalid_auth
+2017-02-07 03:00:12		 The problematic token starts with INSERT VAL
+2017-02-07 03:00:12		 Please check your API token with
+2017-02-07 03:00:12		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:02:18		!! slack.com login error: invalid_auth
+2017-02-07 03:02:18		 The problematic token starts with INSERT VAL
+2017-02-07 03:02:18		 Please check your API token with
+2017-02-07 03:02:18		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:04:24		!! slack.com login error: invalid_auth
+2017-02-07 03:04:24		 The problematic token starts with INSERT VAL
+2017-02-07 03:04:24		 Please check your API token with
+2017-02-07 03:04:24		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:06:30		!! slack.com login error: invalid_auth
+2017-02-07 03:06:30		 The problematic token starts with INSERT VAL
+2017-02-07 03:06:30		 Please check your API token with
+2017-02-07 03:06:30		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:08:36		!! slack.com login error: invalid_auth
+2017-02-07 03:08:36		 The problematic token starts with INSERT VAL
+2017-02-07 03:08:36		 Please check your API token with
+2017-02-07 03:08:36		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:10:42		!! slack.com login error: invalid_auth
+2017-02-07 03:10:42		 The problematic token starts with INSERT VAL
+2017-02-07 03:10:42		 Please check your API token with
+2017-02-07 03:10:42		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:12:48		!! slack.com login error: invalid_auth
+2017-02-07 03:12:48		 The problematic token starts with INSERT VAL
+2017-02-07 03:12:48		 Please check your API token with
+2017-02-07 03:12:48		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:14:54		!! slack.com login error: invalid_auth
+2017-02-07 03:14:54		 The problematic token starts with INSERT VAL
+2017-02-07 03:14:54		 Please check your API token with
+2017-02-07 03:14:54		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:17:00		!! slack.com login error: invalid_auth
+2017-02-07 03:17:00		 The problematic token starts with INSERT VAL
+2017-02-07 03:17:00		 Please check your API token with
+2017-02-07 03:17:00		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:19:06		!! slack.com login error: invalid_auth
+2017-02-07 03:19:06		 The problematic token starts with INSERT VAL
+2017-02-07 03:19:06		 Please check your API token with
+2017-02-07 03:19:06		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:21:12		!! slack.com login error: invalid_auth
+2017-02-07 03:21:12		 The problematic token starts with INSERT VAL
+2017-02-07 03:21:12		 Please check your API token with
+2017-02-07 03:21:12		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:23:18		!! slack.com login error: invalid_auth
+2017-02-07 03:23:18		 The problematic token starts with INSERT VAL
+2017-02-07 03:23:18		 Please check your API token with
+2017-02-07 03:23:18		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:25:24		!! slack.com login error: invalid_auth
+2017-02-07 03:25:24		 The problematic token starts with INSERT VAL
+2017-02-07 03:25:24		 Please check your API token with
+2017-02-07 03:25:24		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:27:30		!! slack.com login error: invalid_auth
+2017-02-07 03:27:30		 The problematic token starts with INSERT VAL
+2017-02-07 03:27:30		 Please check your API token with
+2017-02-07 03:27:30		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:28:45	=!=	python: function "quit_notification_cb" must return a valid value
+2017-02-07 03:28:45	=!=	python: error in function "quit_notification_cb"
+2017-02-07 03:28:50		slack: DEBUG: Loading messages from cache.
+2017-02-07 03:28:50		slack: DEBUG: Completed loading messages from cache.
+2017-02-07 03:28:50		python scripts loaded: slack_extension
+2017-02-07 03:28:50		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-02-07 03:28:50		!! slack.com login error: invalid_auth
+2017-02-07 03:28:50		 The problematic token starts with INSERT VAL
+2017-02-07 03:28:50		 Please check your API token with
+2017-02-07 03:28:50		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:28:56	=!=	python: function "quit_notification_cb" must return a valid value
+2017-02-07 03:28:56	=!=	python: error in function "quit_notification_cb"
+2017-02-07 03:29:02		slack: DEBUG: Loading messages from cache.
+2017-02-07 03:29:02		slack: DEBUG: Completed loading messages from cache.
+2017-02-07 03:29:02		python scripts loaded: slack_extension
+2017-02-07 03:29:02		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-02-07 03:29:03		!! slack.com login error: invalid_auth
+2017-02-07 03:29:03		 The problematic token starts with INSERT VAL
+2017-02-07 03:29:03		 Please check your API token with
+2017-02-07 03:29:03		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:31:09		!! slack.com login error: invalid_auth
+2017-02-07 03:31:09		 The problematic token starts with INSERT VAL
+2017-02-07 03:31:09		 Please check your API token with
+2017-02-07 03:31:09		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:33:15		!! slack.com login error: invalid_auth
+2017-02-07 03:33:15		 The problematic token starts with INSERT VAL
+2017-02-07 03:33:15		 Please check your API token with
+2017-02-07 03:33:15		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:35:21		!! slack.com login error: invalid_auth
+2017-02-07 03:35:21		 The problematic token starts with INSERT VAL
+2017-02-07 03:35:21		 Please check your API token with
+2017-02-07 03:35:21		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:37:27		!! slack.com login error: invalid_auth
+2017-02-07 03:37:27		 The problematic token starts with INSERT VAL
+2017-02-07 03:37:27		 Please check your API token with
+2017-02-07 03:37:27		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:39:33		!! slack.com login error: invalid_auth
+2017-02-07 03:39:33		 The problematic token starts with INSERT VAL
+2017-02-07 03:39:33		 Please check your API token with
+2017-02-07 03:39:33		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:41:39		!! slack.com login error: invalid_auth
+2017-02-07 03:41:39		 The problematic token starts with INSERT VAL
+2017-02-07 03:41:39		 Please check your API token with
+2017-02-07 03:41:39		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:41:43	=!=	python: function "quit_notification_cb" must return a valid value
+2017-02-07 03:41:43	=!=	python: error in function "quit_notification_cb"
+2017-02-07 03:41:53		slack: DEBUG: Loading messages from cache.
+2017-02-07 03:41:53		slack: DEBUG: Completed loading messages from cache.
+2017-02-07 03:41:53		python scripts loaded: slack_extension
+2017-02-07 03:41:53		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-02-07 03:41:53		!! slack.com login error: invalid_auth
+2017-02-07 03:41:53		 The problematic token starts with INSERT VAL
+2017-02-07 03:41:53		 Please check your API token with
+2017-02-07 03:41:53		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:43:59		!! slack.com login error: invalid_auth
+2017-02-07 03:43:59		 The problematic token starts with INSERT VAL
+2017-02-07 03:43:59		 Please check your API token with
+2017-02-07 03:43:59		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:46:05		!! slack.com login error: invalid_auth
+2017-02-07 03:46:05		 The problematic token starts with INSERT VAL
+2017-02-07 03:46:05		 Please check your API token with
+2017-02-07 03:46:05		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:48:11		!! slack.com login error: invalid_auth
+2017-02-07 03:48:11		 The problematic token starts with INSERT VAL
+2017-02-07 03:48:11		 Please check your API token with
+2017-02-07 03:48:11		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:50:17		!! slack.com login error: invalid_auth
+2017-02-07 03:50:17		 The problematic token starts with INSERT VAL
+2017-02-07 03:50:17		 Please check your API token with
+2017-02-07 03:50:17		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:52:23		!! slack.com login error: invalid_auth
+2017-02-07 03:52:23		 The problematic token starts with INSERT VAL
+2017-02-07 03:52:23		 Please check your API token with
+2017-02-07 03:52:23		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:54:29		!! slack.com login error: invalid_auth
+2017-02-07 03:54:29		 The problematic token starts with INSERT VAL
+2017-02-07 03:54:29		 Please check your API token with
+2017-02-07 03:54:29		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:56:35		!! slack.com login error: invalid_auth
+2017-02-07 03:56:35		 The problematic token starts with INSERT VAL
+2017-02-07 03:56:35		 Please check your API token with
+2017-02-07 03:56:35		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 03:58:41		!! slack.com login error: invalid_auth
+2017-02-07 03:58:41		 The problematic token starts with INSERT VAL
+2017-02-07 03:58:41		 Please check your API token with
+2017-02-07 03:58:41		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 04:00:47		!! slack.com login error: invalid_auth
+2017-02-07 04:00:47		 The problematic token starts with INSERT VAL
+2017-02-07 04:00:47		 Please check your API token with
+2017-02-07 04:00:47		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 04:02:53		!! slack.com login error: invalid_auth
+2017-02-07 04:02:53		 The problematic token starts with INSERT VAL
+2017-02-07 04:02:53		 Please check your API token with
+2017-02-07 04:02:53		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 04:04:59		!! slack.com login error: invalid_auth
+2017-02-07 04:04:59		 The problematic token starts with INSERT VAL
+2017-02-07 04:04:59		 Please check your API token with
+2017-02-07 04:04:59		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 04:05:52	=!=	python: function "quit_notification_cb" must return a valid value
+2017-02-07 04:05:52	=!=	python: error in function "quit_notification_cb"
+2017-02-07 08:58:18		slack: DEBUG: Loading messages from cache.
+2017-02-07 08:58:18		slack: DEBUG: Completed loading messages from cache.
+2017-02-07 08:58:18		python scripts loaded: slack_extension
+2017-02-07 08:58:18		Plugins loaded: alias, aspell, charset, exec, fifo, guile, irc, javascript, logger, lua, perl, python, relay, ruby, script, tcl, trigger, xfer
+2017-02-07 08:58:18		!! slack.com login error: invalid_auth
+2017-02-07 08:58:18		 The problematic token starts with INSERT VAL
+2017-02-07 08:58:18		 Please check your API token with
+2017-02-07 08:58:18		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 09:00:24		!! slack.com login error: invalid_auth
+2017-02-07 09:00:24		 The problematic token starts with INSERT VAL
+2017-02-07 09:00:24		 Please check your API token with
+2017-02-07 09:00:24		 "/set plugins.var.python.slack_extension.slack_api_token (token)"
+2017-02-07 09:02:30		!! slack.com login error: invalid_auth
+2017-02-07 09:02:30		 The problematic token starts with INSERT VAL
+2017-02-07 09:02:30		 Please check your API token with
+2017-02-07 09:02:30		 "/set plugins.var.python.slack_extension.slack_api_token (token)"

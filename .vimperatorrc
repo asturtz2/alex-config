@@ -1,7 +1,7 @@
 noremap j 3j
 noremap k 3k
-set editor="gnome-terminal -e vim"
-set gui="none,navigation"
+set editor="nvim"
+set gui="none"
 set hintmatching="fuzzy"
 set noscrollbars
 set popups=window

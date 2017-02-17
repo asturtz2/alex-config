@@ -10,19 +10,24 @@ import XMonad.Layout.Spacing
 import XMonad.Layout.EqualSpacing
 import XMonad.Layout.MultiToggle
 import XMonad.Layout.MultiToggle.Instances
+import XMonad.Layout.PerWorkspace
 
 import XMonad.Util.Run(spawnPipe, runInTerm)
 import XMonad.Util.EZConfig(additionalKeys)
 
 import XMonad.Actions.WindowGo
+import XMonad.Actions.SpawnOn
+
+import XMonad.Prompt
 
 main = do
-    xmproc <- spawnPipe "/usr/bin/xmobar ~/.xmobarrc"
-    xmonad $ defaultConfig
+    xmproc  <- spawnPipe "/usr/bin/xmobar ~/.xmobarrc"
+    xmonad $ def
         { startupHook        = startup
-        , manageHook         = manageHook'
-        , layoutHook         = layout
         , logHook            = logHook' xmproc
+        , manageHook         = manageHook'
+        , workspaces         = workspaces'
+        , layoutHook         = layout
         , borderWidth        = borderWidth'
         , terminal           = terminal'
         , normalBorderColor  = normalBorderColor'
@@ -35,6 +40,7 @@ main = do
         , vim
         , ranger
         , weechat
+        , mail
         ]
 
 -- Basic configs
@@ -44,9 +50,18 @@ normalBorderColor' = "#cccccc"
 focusedBorderColor' = "#8A745E"
 
 startup :: X ()
-startup = do
-    spawn "wal -i '$(< '${HOME}/.cache/wal/wal')'"
+startup = runInTerm "" "!wal"
 
+logHook' xmproc = dynamicLogWithPP xmobarPP
+    { ppOutput = hPutStrLn xmproc
+    , ppTitle  = xmobarColor "brown" "" . shorten 50
+    }
+
+manageHook' = manageDocks <+> manageWorkspaces <+> manageHook defaultConfig
+manageWorkspaces = composeAll
+    [ className =? "firefox"    --> doShift "3:web"
+    ]
+workspaces' = ["1:Main", "2:Dev", "3:Web", "4:Viewer", "5:Chat", "6:Mail", "7:Music", "8:Video", "9:Scratch"]
 -- Layouts
 layout = id
     . equalSpacing gapWidth gapShrink mult minWidth
@@ -63,21 +78,15 @@ layout = id
     ratio     = 1/2
     delta     = 3/100
 
--- Hooks
-manageHook' = manageDocks <+> manageHook defaultConfig
-logHook' xmproc = dynamicLogWithPP xmobarPP
-    { ppOutput = hPutStrLn xmproc
-    , ppTitle  = xmobarColor "brown" "" . shorten 50
-    }
-
 -- Keymappings
 -- Should be of type XConfig a -> [((ButtonMask, KeySym), X ())] -> XConfig a 
 -- keybind :: XConfig a -> [((ButtonMask, KeySym), X ())] -> XConfig a
 
 firefox = ((mod1Mask .|. shiftMask, xK_b), spawn "firefox")
 zathura = ((mod1Mask .|. shiftMask, xK_z), spawn "zathura")
-rtv     = ((mod1Mask .|. shiftMask, xK_r), runInTerm "" "rtv")
-vim     = ((mod1Mask .|. shiftMask, xK_v), runInTerm "" "nvim")
-ranger  = ((mod1Mask .|. shiftMask, xK_t), runInTerm "" "env EDITOR=nvim ranger")
-weechat = ((mod1Mask .|. shiftMask, xK_m), runInTerm "" "weechat")
+rtv     = ((mod1Mask .|. shiftMask, xK_r), runInTerm "-title rtv" "rtv")
+vim     = ((mod1Mask .|. shiftMask, xK_v), runInTerm "-title vim" "nvim")
+ranger  = ((mod1Mask .|. shiftMask, xK_t), runInTerm "-title ranger" "env EDITOR=nvim ranger")
+weechat = ((mod1Mask .|. shiftMask, xK_i), runInTerm "-title weechat" "weechat")
+mail    = ((mod1Mask .|. shiftMask, xK_m), runInTerm "-title mail" "sup-mail")
 toggleFullScreen = ((mod1Mask, xK_f), sendMessage $ Toggle FULL)

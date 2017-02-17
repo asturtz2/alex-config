@@ -1,19 +1,15 @@
-[2017-02-07 11:57:48] WeeChat 1.6 (compiled on Oct  6 2016 11:55:35)
-[2017-02-07 11:57:48] Reading configuration file sec.conf
-[2017-02-07 11:57:55] Reading configuration file weechat.conf
-[2017-02-07 11:57:55] Reading configuration file plugins.conf
-[2017-02-07 11:57:55] Reading configuration file charset.conf
-[2017-02-07 11:57:55] Reading configuration file logger.conf
-[2017-02-07 11:57:55] Reading configuration file exec.conf
-[2017-02-07 11:57:55] Reading configuration file trigger.conf
-[2017-02-07 11:57:55] Reading configuration file aspell.conf
-[2017-02-07 11:57:55] Reading configuration file alias.conf
-[2017-02-07 11:57:55] Reading configuration file xfer.conf
-[2017-02-07 11:57:55] Reading configuration file irc.conf
-[2017-02-07 11:57:55] Reading configuration file relay.conf
-[2017-02-07 11:57:55] Reading configuration file script.conf
-[2017-02-07 11:57:55] irc: connecting to server chat.freenode.org/6667...
-[2017-02-07 14:04:38] irc: connecting to server chat.freenode.org/6667...
-[2017-02-07 15:14:45] irc: connecting to server chat.freenode.org/6667...
-[2017-02-07 17:03:17] irc: connecting to server chat.freenode.org/6667...
-[2017-02-07 17:13:16] irc: connecting to server chat.freenode.org/6667...
+[2017-02-16 21:28:03] WeeChat 1.6 (compiled on Oct  6 2016 11:55:35)
+[2017-02-16 21:28:03] Reading configuration file sec.conf
+[2017-02-16 21:28:05] Reading configuration file weechat.conf
+[2017-02-16 21:28:05] Reading configuration file plugins.conf
+[2017-02-16 21:28:05] Reading configuration file charset.conf
+[2017-02-16 21:28:05] Reading configuration file logger.conf
+[2017-02-16 21:28:05] Reading configuration file exec.conf
+[2017-02-16 21:28:05] Reading configuration file trigger.conf
+[2017-02-16 21:28:05] Reading configuration file aspell.conf
+[2017-02-16 21:28:05] Reading configuration file alias.conf
+[2017-02-16 21:28:05] Reading configuration file xfer.conf
+[2017-02-16 21:28:05] Reading configuration file irc.conf
+[2017-02-16 21:28:05] Reading configuration file relay.conf
+[2017-02-16 21:28:06] Reading configuration file script.conf
+[2017-02-16 21:28:06] irc: connecting to server chat.freenode.org/6667...

@@ -82,8 +82,9 @@ set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
+let g:syntastic_auto_loc_list = 0
 let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
 let g:syntastic_cs_checkers=['syntax', 'semantic', 'issues']
 " }}}
 
@@ -109,7 +110,7 @@ call plug#begin()
 
 " Core {{{
 Plug 'ctrlpvim/ctrlp.vim', { 'on' : ['CtrlP', 'CtrlPBuffer', 'CtrlPMRU'] }
-Plug 'tpope/vim-fugitive', { 'on' : ['Gstatus', 'Gblame', 'Glog', 'Gdiff'] }
+Plug 'tpope/vim-fugitive'
 Plug 'xolox/vim-easytags'
 Plug 'xolox/vim-misc'
 Plug 'tpope/vim-commentary'
@@ -128,6 +129,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'vim-syntastic/syntastic'
 Plug 'ervandew/supertab'
 Plug 'SirVer/ultisnips'
+Plug 'Valloric/YouCompleteMe'
 Plug 'honza/vim-snippets'
 Plug 'airblade/vim-gitgutter'
 " }}}
@@ -149,7 +151,7 @@ Plug 'adimit/prolog.vim', { 'for' : 'pl'}
 " }}}
 
 " Latex {{{
-Plug 'lervag/vimtex'
+Plug 'lervag/vimtex', { 'for' : ['tex', 'plaintex', 'latex'] }
 " }}}
 
 call plug#end()
@@ -182,6 +184,9 @@ map <LocalLeader>s :OmniSharpReloadSolution<CR>
 " }}}
 
 " }}}
+
+" Latex{{{
+let g:vimtex_complete_close_braces = 1 
 " }}}
 " UI {{{
 colorscheme wal
